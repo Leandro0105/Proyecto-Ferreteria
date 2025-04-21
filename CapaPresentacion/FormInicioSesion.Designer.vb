@@ -22,62 +22,33 @@ Partial Class FormInicioSesion
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.FlowLayoutPanel1 = New System.Windows.Forms.FlowLayoutPanel()
-        Me.btnCerrar = New System.Windows.Forms.PictureBox()
-        Me.btnMinimizar = New System.Windows.Forms.PictureBox()
+        Me.BarraTitulo = New System.Windows.Forms.Panel()
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.btnMinimizar = New System.Windows.Forms.PictureBox()
+        Me.btnCerrar = New System.Windows.Forms.PictureBox()
+        Me.FlowLayoutPanel1 = New System.Windows.Forms.FlowLayoutPanel()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.txtUsuario = New System.Windows.Forms.TextBox()
         Me.txtPassword = New System.Windows.Forms.TextBox()
         Me.btnIniciarSesion = New System.Windows.Forms.Button()
         Me.LinkLabel1 = New System.Windows.Forms.LinkLabel()
-        Me.Panel1.SuspendLayout()
-        CType(Me.btnCerrar, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.BarraTitulo.SuspendLayout()
         CType(Me.btnMinimizar, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.btnCerrar, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
-        'Panel1
+        'BarraTitulo
         '
-        Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(38, Byte), Integer), CType(CType(46, Byte), Integer), CType(CType(94, Byte), Integer))
-        Me.Panel1.Controls.Add(Me.Label1)
-        Me.Panel1.Controls.Add(Me.btnMinimizar)
-        Me.Panel1.Controls.Add(Me.btnCerrar)
-        Me.Panel1.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Panel1.Location = New System.Drawing.Point(0, 0)
-        Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(322, 44)
-        Me.Panel1.TabIndex = 0
-        '
-        'FlowLayoutPanel1
-        '
-        Me.FlowLayoutPanel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(38, Byte), Integer), CType(CType(46, Byte), Integer), CType(CType(94, Byte), Integer))
-        Me.FlowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.FlowLayoutPanel1.Location = New System.Drawing.Point(0, 517)
-        Me.FlowLayoutPanel1.Name = "FlowLayoutPanel1"
-        Me.FlowLayoutPanel1.Size = New System.Drawing.Size(322, 17)
-        Me.FlowLayoutPanel1.TabIndex = 1
-        '
-        'btnCerrar
-        '
-        Me.btnCerrar.Image = Global.CapaPresentacion.My.Resources.Resources.cerrar
-        Me.btnCerrar.Location = New System.Drawing.Point(279, 3)
-        Me.btnCerrar.Name = "btnCerrar"
-        Me.btnCerrar.Size = New System.Drawing.Size(38, 38)
-        Me.btnCerrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.btnCerrar.TabIndex = 0
-        Me.btnCerrar.TabStop = False
-        '
-        'btnMinimizar
-        '
-        Me.btnMinimizar.Image = Global.CapaPresentacion.My.Resources.Resources.menos
-        Me.btnMinimizar.Location = New System.Drawing.Point(237, 3)
-        Me.btnMinimizar.Name = "btnMinimizar"
-        Me.btnMinimizar.Size = New System.Drawing.Size(38, 38)
-        Me.btnMinimizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.btnMinimizar.TabIndex = 1
-        Me.btnMinimizar.TabStop = False
+        Me.BarraTitulo.BackColor = System.Drawing.Color.FromArgb(CType(CType(38, Byte), Integer), CType(CType(46, Byte), Integer), CType(CType(94, Byte), Integer))
+        Me.BarraTitulo.Controls.Add(Me.Label1)
+        Me.BarraTitulo.Controls.Add(Me.btnMinimizar)
+        Me.BarraTitulo.Controls.Add(Me.btnCerrar)
+        Me.BarraTitulo.Dock = System.Windows.Forms.DockStyle.Top
+        Me.BarraTitulo.Location = New System.Drawing.Point(0, 0)
+        Me.BarraTitulo.Name = "BarraTitulo"
+        Me.BarraTitulo.Size = New System.Drawing.Size(322, 45)
+        Me.BarraTitulo.TabIndex = 0
         '
         'Label1
         '
@@ -89,6 +60,35 @@ Partial Class FormInicioSesion
         Me.Label1.Size = New System.Drawing.Size(109, 19)
         Me.Label1.TabIndex = 2
         Me.Label1.Text = "Iniciar Sesion"
+        '
+        'btnMinimizar
+        '
+        Me.btnMinimizar.Image = Global.CapaPresentacion.My.Resources.Resources.menos
+        Me.btnMinimizar.Location = New System.Drawing.Point(237, 3)
+        Me.btnMinimizar.Name = "btnMinimizar"
+        Me.btnMinimizar.Size = New System.Drawing.Size(38, 38)
+        Me.btnMinimizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.btnMinimizar.TabIndex = 1
+        Me.btnMinimizar.TabStop = False
+        '
+        'btnCerrar
+        '
+        Me.btnCerrar.Image = Global.CapaPresentacion.My.Resources.Resources.cerrar
+        Me.btnCerrar.Location = New System.Drawing.Point(279, 3)
+        Me.btnCerrar.Name = "btnCerrar"
+        Me.btnCerrar.Size = New System.Drawing.Size(38, 38)
+        Me.btnCerrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.btnCerrar.TabIndex = 0
+        Me.btnCerrar.TabStop = False
+        '
+        'FlowLayoutPanel1
+        '
+        Me.FlowLayoutPanel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(38, Byte), Integer), CType(CType(46, Byte), Integer), CType(CType(94, Byte), Integer))
+        Me.FlowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Bottom
+        Me.FlowLayoutPanel1.Location = New System.Drawing.Point(0, 519)
+        Me.FlowLayoutPanel1.Name = "FlowLayoutPanel1"
+        Me.FlowLayoutPanel1.Size = New System.Drawing.Size(322, 15)
+        Me.FlowLayoutPanel1.TabIndex = 1
         '
         'Label2
         '
@@ -129,6 +129,8 @@ Partial Class FormInicioSesion
         'btnIniciarSesion
         '
         Me.btnIniciarSesion.BackColor = System.Drawing.SystemColors.MenuHighlight
+        Me.btnIniciarSesion.FlatAppearance.BorderSize = 0
+        Me.btnIniciarSesion.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnIniciarSesion.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnIniciarSesion.ForeColor = System.Drawing.Color.White
         Me.btnIniciarSesion.Location = New System.Drawing.Point(67, 311)
@@ -141,9 +143,10 @@ Partial Class FormInicioSesion
         'LinkLabel1
         '
         Me.LinkLabel1.AutoSize = True
-        Me.LinkLabel1.Location = New System.Drawing.Point(106, 369)
+        Me.LinkLabel1.Font = New System.Drawing.Font("Century Gothic", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LinkLabel1.Location = New System.Drawing.Point(95, 376)
         Me.LinkLabel1.Name = "LinkLabel1"
-        Me.LinkLabel1.Size = New System.Drawing.Size(114, 13)
+        Me.LinkLabel1.Size = New System.Drawing.Size(129, 15)
         Me.LinkLabel1.TabIndex = 7
         Me.LinkLabel1.TabStop = True
         Me.LinkLabel1.Text = "Recuperar Contraseña"
@@ -161,20 +164,20 @@ Partial Class FormInicioSesion
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.FlowLayoutPanel1)
-        Me.Controls.Add(Me.Panel1)
+        Me.Controls.Add(Me.BarraTitulo)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "FormInicioSesion"
         Me.Text = "Login"
-        Me.Panel1.ResumeLayout(False)
-        Me.Panel1.PerformLayout()
-        CType(Me.btnCerrar, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.BarraTitulo.ResumeLayout(False)
+        Me.BarraTitulo.PerformLayout()
         CType(Me.btnMinimizar, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.btnCerrar, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
 
-    Friend WithEvents Panel1 As Panel
+    Friend WithEvents BarraTitulo As Panel
     Friend WithEvents btnMinimizar As PictureBox
     Friend WithEvents btnCerrar As PictureBox
     Friend WithEvents FlowLayoutPanel1 As FlowLayoutPanel

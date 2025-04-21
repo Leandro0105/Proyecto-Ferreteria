@@ -1,5 +1,6 @@
 ﻿Imports System.Data
 Imports System.Data.SqlClient
+Imports CapaComun
 
 Public Class DAOUsuario
     Inherits ConexionSQLServer
@@ -9,14 +10,18 @@ Public Class DAOUsuario
             ConexionSQLServer.Open()
             Using comando = New SqlCommand
                 comando.Connection = ConexionSQLServer
-                comando.CommandText = "Select estado from Usuarios where Usuario=@usuario and Password=@password "
+                comando.CommandText = "SP_ValidarUsuario"
                 comando.Parameters.AddWithValue("@usuario", usuario)
                 comando.Parameters.AddWithValue("@password", password)
-                comando.CommandType = CommandType.Text
+                comando.CommandType = CommandType.StoredProcedure
                 Dim lector = comando.ExecuteReader
                 If lector.HasRows Then
                     lector.Read()
                     If lector.GetString(0) = "ACTIVO" Then
+                        UsuarioActivo.Permiso = lector.GetString(3)
+                        UsuarioActivo.Nombres = lector.GetString(1)
+                        UsuarioActivo.Apellidos = lector.GetString(2)
+                        lector.Dispose()
                         Return True
                     Else
                         Return False
