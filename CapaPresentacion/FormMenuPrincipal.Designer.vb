@@ -22,27 +22,39 @@ Partial Class FormMenuPrincipal
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FormMenuPrincipal))
         Me.PanelSuperior = New System.Windows.Forms.Panel()
         Me.lblPermiso = New System.Windows.Forms.Label()
         Me.lblNombreUsuario = New System.Windows.Forms.Label()
+        Me.PanelInferior = New System.Windows.Forms.Panel()
+        Me.btnCerrarSesion = New System.Windows.Forms.Button()
+        Me.PanelLateralIzquierdo = New System.Windows.Forms.Panel()
+        Me.PanelContenedor = New System.Windows.Forms.Panel()
+        Me.PictureBox3 = New System.Windows.Forms.PictureBox()
+        Me.btnUsuarios = New FontAwesome.Sharp.IconButton()
+        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.btnRestaurar = New System.Windows.Forms.PictureBox()
         Me.btnMaximizar = New System.Windows.Forms.PictureBox()
         Me.btnMinimizar = New System.Windows.Forms.PictureBox()
         Me.btnCerrar = New System.Windows.Forms.PictureBox()
-        Me.PanelInferior = New System.Windows.Forms.Panel()
-        Me.PanelLateralIzquierdo = New System.Windows.Forms.Panel()
-        Me.PanelContenedor = New System.Windows.Forms.Panel()
-        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
-        Me.btnCerrarSesion = New System.Windows.Forms.Button()
+        Me.btnClientes = New FontAwesome.Sharp.IconButton()
+        Me.btnProveedores = New FontAwesome.Sharp.IconButton()
+        Me.btnProductos = New FontAwesome.Sharp.IconButton()
+        Me.btnCompras = New FontAwesome.Sharp.IconButton()
+        Me.btnVentas = New FontAwesome.Sharp.IconButton()
+        Me.btnReportes = New FontAwesome.Sharp.IconButton()
         Me.PanelSuperior.SuspendLayout()
+        Me.PanelInferior.SuspendLayout()
+        Me.PanelLateralIzquierdo.SuspendLayout()
+        Me.PanelContenedor.SuspendLayout()
+        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.btnRestaurar, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.btnMaximizar, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.btnMinimizar, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.btnCerrar, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.PanelInferior.SuspendLayout()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'PanelSuperior
@@ -82,6 +94,97 @@ Partial Class FormMenuPrincipal
         Me.lblNombreUsuario.Size = New System.Drawing.Size(42, 15)
         Me.lblNombreUsuario.TabIndex = 5
         Me.lblNombreUsuario.Text = "Label1"
+        '
+        'PanelInferior
+        '
+        Me.PanelInferior.BackColor = System.Drawing.Color.FromArgb(CType(CType(38, Byte), Integer), CType(CType(46, Byte), Integer), CType(CType(94, Byte), Integer))
+        Me.PanelInferior.Controls.Add(Me.btnCerrarSesion)
+        Me.PanelInferior.Controls.Add(Me.PictureBox2)
+        Me.PanelInferior.Dock = System.Windows.Forms.DockStyle.Bottom
+        Me.PanelInferior.Location = New System.Drawing.Point(0, 505)
+        Me.PanelInferior.Name = "PanelInferior"
+        Me.PanelInferior.Size = New System.Drawing.Size(900, 45)
+        Me.PanelInferior.TabIndex = 1
+        '
+        'btnCerrarSesion
+        '
+        Me.btnCerrarSesion.FlatAppearance.BorderSize = 0
+        Me.btnCerrarSesion.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnCerrarSesion.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnCerrarSesion.ForeColor = System.Drawing.Color.White
+        Me.btnCerrarSesion.Location = New System.Drawing.Point(53, 0)
+        Me.btnCerrarSesion.Name = "btnCerrarSesion"
+        Me.btnCerrarSesion.Size = New System.Drawing.Size(207, 45)
+        Me.btnCerrarSesion.TabIndex = 1
+        Me.btnCerrarSesion.Text = "Cerrar Sesión"
+        Me.btnCerrarSesion.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnCerrarSesion.UseVisualStyleBackColor = True
+        '
+        'PanelLateralIzquierdo
+        '
+        Me.PanelLateralIzquierdo.BackColor = System.Drawing.Color.FromArgb(CType(CType(89, Byte), Integer), CType(CType(120, Byte), Integer), CType(CType(148, Byte), Integer))
+        Me.PanelLateralIzquierdo.Controls.Add(Me.btnReportes)
+        Me.PanelLateralIzquierdo.Controls.Add(Me.btnVentas)
+        Me.PanelLateralIzquierdo.Controls.Add(Me.btnCompras)
+        Me.PanelLateralIzquierdo.Controls.Add(Me.btnProductos)
+        Me.PanelLateralIzquierdo.Controls.Add(Me.btnProveedores)
+        Me.PanelLateralIzquierdo.Controls.Add(Me.btnClientes)
+        Me.PanelLateralIzquierdo.Controls.Add(Me.btnUsuarios)
+        Me.PanelLateralIzquierdo.Dock = System.Windows.Forms.DockStyle.Left
+        Me.PanelLateralIzquierdo.Location = New System.Drawing.Point(0, 45)
+        Me.PanelLateralIzquierdo.Name = "PanelLateralIzquierdo"
+        Me.PanelLateralIzquierdo.Size = New System.Drawing.Size(260, 460)
+        Me.PanelLateralIzquierdo.TabIndex = 2
+        '
+        'PanelContenedor
+        '
+        Me.PanelContenedor.Controls.Add(Me.PictureBox3)
+        Me.PanelContenedor.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.PanelContenedor.Location = New System.Drawing.Point(260, 45)
+        Me.PanelContenedor.Name = "PanelContenedor"
+        Me.PanelContenedor.Size = New System.Drawing.Size(640, 460)
+        Me.PanelContenedor.TabIndex = 3
+        '
+        'PictureBox3
+        '
+        Me.PictureBox3.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.PictureBox3.Image = Global.CapaPresentacion.My.Resources.Resources.logo_sistema
+        Me.PictureBox3.Location = New System.Drawing.Point(0, 0)
+        Me.PictureBox3.Name = "PictureBox3"
+        Me.PictureBox3.Size = New System.Drawing.Size(640, 460)
+        Me.PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox3.TabIndex = 0
+        Me.PictureBox3.TabStop = False
+        '
+        'btnUsuarios
+        '
+        Me.btnUsuarios.FlatAppearance.BorderSize = 0
+        Me.btnUsuarios.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnUsuarios.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnUsuarios.ForeColor = System.Drawing.Color.White
+        Me.btnUsuarios.Icon = FontAwesome.Sharp.IconChar.User
+        Me.btnUsuarios.IconColor = System.Drawing.Color.White
+        Me.btnUsuarios.IconSize = 40
+        Me.btnUsuarios.Image = CType(resources.GetObject("btnUsuarios.Image"), System.Drawing.Image)
+        Me.btnUsuarios.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnUsuarios.Location = New System.Drawing.Point(0, 0)
+        Me.btnUsuarios.Name = "btnUsuarios"
+        Me.btnUsuarios.Size = New System.Drawing.Size(260, 45)
+        Me.btnUsuarios.TabIndex = 0
+        Me.btnUsuarios.Text = "Usuarios"
+        Me.btnUsuarios.UseVisualStyleBackColor = True
+        '
+        'PictureBox2
+        '
+        Me.PictureBox2.Image = Global.CapaPresentacion.My.Resources.Resources.poder
+        Me.PictureBox2.Location = New System.Drawing.Point(4, -1)
+        Me.PictureBox2.Name = "PictureBox2"
+        Me.PictureBox2.Size = New System.Drawing.Size(45, 45)
+        Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox2.TabIndex = 0
+        Me.PictureBox2.TabStop = False
         '
         'PictureBox1
         '
@@ -137,56 +240,113 @@ Partial Class FormMenuPrincipal
         Me.btnCerrar.TabIndex = 0
         Me.btnCerrar.TabStop = False
         '
-        'PanelInferior
+        'btnClientes
         '
-        Me.PanelInferior.BackColor = System.Drawing.Color.FromArgb(CType(CType(38, Byte), Integer), CType(CType(46, Byte), Integer), CType(CType(94, Byte), Integer))
-        Me.PanelInferior.Controls.Add(Me.btnCerrarSesion)
-        Me.PanelInferior.Controls.Add(Me.PictureBox2)
-        Me.PanelInferior.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.PanelInferior.Location = New System.Drawing.Point(0, 505)
-        Me.PanelInferior.Name = "PanelInferior"
-        Me.PanelInferior.Size = New System.Drawing.Size(900, 45)
-        Me.PanelInferior.TabIndex = 1
+        Me.btnClientes.FlatAppearance.BorderSize = 0
+        Me.btnClientes.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnClientes.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnClientes.ForeColor = System.Drawing.Color.White
+        Me.btnClientes.Icon = FontAwesome.Sharp.IconChar.Users
+        Me.btnClientes.IconColor = System.Drawing.Color.White
+        Me.btnClientes.IconSize = 40
+        Me.btnClientes.Image = CType(resources.GetObject("btnClientes.Image"), System.Drawing.Image)
+        Me.btnClientes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnClientes.Location = New System.Drawing.Point(0, 46)
+        Me.btnClientes.Name = "btnClientes"
+        Me.btnClientes.Size = New System.Drawing.Size(260, 45)
+        Me.btnClientes.TabIndex = 1
+        Me.btnClientes.Text = "Clientes"
+        Me.btnClientes.UseVisualStyleBackColor = True
         '
-        'PanelLateralIzquierdo
+        'btnProveedores
         '
-        Me.PanelLateralIzquierdo.Dock = System.Windows.Forms.DockStyle.Left
-        Me.PanelLateralIzquierdo.Location = New System.Drawing.Point(0, 45)
-        Me.PanelLateralIzquierdo.Name = "PanelLateralIzquierdo"
-        Me.PanelLateralIzquierdo.Size = New System.Drawing.Size(260, 460)
-        Me.PanelLateralIzquierdo.TabIndex = 2
+        Me.btnProveedores.FlatAppearance.BorderSize = 0
+        Me.btnProveedores.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnProveedores.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnProveedores.ForeColor = System.Drawing.Color.White
+        Me.btnProveedores.Icon = FontAwesome.Sharp.IconChar.Truck
+        Me.btnProveedores.IconColor = System.Drawing.Color.White
+        Me.btnProveedores.IconSize = 40
+        Me.btnProveedores.Image = CType(resources.GetObject("btnProveedores.Image"), System.Drawing.Image)
+        Me.btnProveedores.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnProveedores.Location = New System.Drawing.Point(0, 92)
+        Me.btnProveedores.Name = "btnProveedores"
+        Me.btnProveedores.Size = New System.Drawing.Size(260, 45)
+        Me.btnProveedores.TabIndex = 2
+        Me.btnProveedores.Text = "Proveedores"
+        Me.btnProveedores.UseVisualStyleBackColor = True
         '
-        'PanelContenedor
+        'btnProductos
         '
-        Me.PanelContenedor.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.PanelContenedor.Location = New System.Drawing.Point(260, 45)
-        Me.PanelContenedor.Name = "PanelContenedor"
-        Me.PanelContenedor.Size = New System.Drawing.Size(640, 460)
-        Me.PanelContenedor.TabIndex = 3
+        Me.btnProductos.FlatAppearance.BorderSize = 0
+        Me.btnProductos.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnProductos.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnProductos.ForeColor = System.Drawing.Color.White
+        Me.btnProductos.Icon = FontAwesome.Sharp.IconChar.Cubes
+        Me.btnProductos.IconColor = System.Drawing.Color.White
+        Me.btnProductos.IconSize = 40
+        Me.btnProductos.Image = CType(resources.GetObject("btnProductos.Image"), System.Drawing.Image)
+        Me.btnProductos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnProductos.Location = New System.Drawing.Point(0, 138)
+        Me.btnProductos.Name = "btnProductos"
+        Me.btnProductos.Size = New System.Drawing.Size(260, 45)
+        Me.btnProductos.TabIndex = 3
+        Me.btnProductos.Text = "Productos"
+        Me.btnProductos.UseVisualStyleBackColor = True
         '
-        'PictureBox2
+        'btnCompras
         '
-        Me.PictureBox2.Image = Global.CapaPresentacion.My.Resources.Resources.poder
-        Me.PictureBox2.Location = New System.Drawing.Point(4, -1)
-        Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(45, 45)
-        Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox2.TabIndex = 0
-        Me.PictureBox2.TabStop = False
+        Me.btnCompras.FlatAppearance.BorderSize = 0
+        Me.btnCompras.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnCompras.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnCompras.ForeColor = System.Drawing.Color.White
+        Me.btnCompras.Icon = FontAwesome.Sharp.IconChar.ShoppingCart
+        Me.btnCompras.IconColor = System.Drawing.Color.White
+        Me.btnCompras.IconSize = 40
+        Me.btnCompras.Image = CType(resources.GetObject("btnCompras.Image"), System.Drawing.Image)
+        Me.btnCompras.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnCompras.Location = New System.Drawing.Point(0, 184)
+        Me.btnCompras.Name = "btnCompras"
+        Me.btnCompras.Size = New System.Drawing.Size(260, 45)
+        Me.btnCompras.TabIndex = 4
+        Me.btnCompras.Text = "Compras"
+        Me.btnCompras.UseVisualStyleBackColor = True
         '
-        'btnCerrarSesion
+        'btnVentas
         '
-        Me.btnCerrarSesion.FlatAppearance.BorderSize = 0
-        Me.btnCerrarSesion.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnCerrarSesion.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnCerrarSesion.ForeColor = System.Drawing.Color.White
-        Me.btnCerrarSesion.Location = New System.Drawing.Point(53, 0)
-        Me.btnCerrarSesion.Name = "btnCerrarSesion"
-        Me.btnCerrarSesion.Size = New System.Drawing.Size(207, 45)
-        Me.btnCerrarSesion.TabIndex = 1
-        Me.btnCerrarSesion.Text = "Cerrar Sesión"
-        Me.btnCerrarSesion.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnCerrarSesion.UseVisualStyleBackColor = True
+        Me.btnVentas.FlatAppearance.BorderSize = 0
+        Me.btnVentas.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnVentas.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnVentas.ForeColor = System.Drawing.Color.White
+        Me.btnVentas.Icon = FontAwesome.Sharp.IconChar.Tags
+        Me.btnVentas.IconColor = System.Drawing.Color.White
+        Me.btnVentas.IconSize = 40
+        Me.btnVentas.Image = CType(resources.GetObject("btnVentas.Image"), System.Drawing.Image)
+        Me.btnVentas.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnVentas.Location = New System.Drawing.Point(0, 230)
+        Me.btnVentas.Name = "btnVentas"
+        Me.btnVentas.Size = New System.Drawing.Size(260, 45)
+        Me.btnVentas.TabIndex = 5
+        Me.btnVentas.Text = "Ventas"
+        Me.btnVentas.UseVisualStyleBackColor = True
+        '
+        'btnReportes
+        '
+        Me.btnReportes.FlatAppearance.BorderSize = 0
+        Me.btnReportes.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnReportes.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnReportes.ForeColor = System.Drawing.Color.White
+        Me.btnReportes.Icon = FontAwesome.Sharp.IconChar.FilePdfO
+        Me.btnReportes.IconColor = System.Drawing.Color.White
+        Me.btnReportes.IconSize = 40
+        Me.btnReportes.Image = CType(resources.GetObject("btnReportes.Image"), System.Drawing.Image)
+        Me.btnReportes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnReportes.Location = New System.Drawing.Point(0, 276)
+        Me.btnReportes.Name = "btnReportes"
+        Me.btnReportes.Size = New System.Drawing.Size(260, 45)
+        Me.btnReportes.TabIndex = 6
+        Me.btnReportes.Text = "Reportes"
+        Me.btnReportes.UseVisualStyleBackColor = True
         '
         'FormMenuPrincipal
         '
@@ -202,13 +362,16 @@ Partial Class FormMenuPrincipal
         Me.Text = "Menu Principal"
         Me.PanelSuperior.ResumeLayout(False)
         Me.PanelSuperior.PerformLayout()
+        Me.PanelInferior.ResumeLayout(False)
+        Me.PanelLateralIzquierdo.ResumeLayout(False)
+        Me.PanelContenedor.ResumeLayout(False)
+        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.btnRestaurar, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.btnMaximizar, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.btnMinimizar, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.btnCerrar, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.PanelInferior.ResumeLayout(False)
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -226,4 +389,12 @@ Partial Class FormMenuPrincipal
     Friend WithEvents lblNombreUsuario As Label
     Friend WithEvents btnCerrarSesion As Button
     Friend WithEvents PictureBox2 As PictureBox
+    Friend WithEvents btnUsuarios As FontAwesome.Sharp.IconButton
+    Friend WithEvents PictureBox3 As PictureBox
+    Friend WithEvents btnReportes As FontAwesome.Sharp.IconButton
+    Friend WithEvents btnVentas As FontAwesome.Sharp.IconButton
+    Friend WithEvents btnCompras As FontAwesome.Sharp.IconButton
+    Friend WithEvents btnProductos As FontAwesome.Sharp.IconButton
+    Friend WithEvents btnProveedores As FontAwesome.Sharp.IconButton
+    Friend WithEvents btnClientes As FontAwesome.Sharp.IconButton
 End Class

@@ -29,7 +29,9 @@ Public Class FormMenuPrincipal
 
 
     Private Sub FormMenuPrincipal_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        btnRestaurar.Visible = False
+        btnMaximizar.Visible = False
+        Me.MaximizedBounds = Screen.FromHandle(Me.Handle).WorkingArea
+        Me.WindowState = FormWindowState.Maximized
         lblNombreUsuario.Text = UsuarioActivo.Apellidos + ", " + UsuarioActivo.Nombres
         If UsuarioActivo.Permiso = "SUPER USUARIO" Then
             lblPermiso.Text = "CEO SISTEMA"
