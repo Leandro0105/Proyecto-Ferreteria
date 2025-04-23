@@ -86,10 +86,52 @@
     <Compile Include="FormInicioSesion.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="FormMenuClientes.Designer.vb">
+      <DependentUpon>FormMenuClientes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormMenuClientes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMenuCompras.Designer.vb">
+      <DependentUpon>FormMenuCompras.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormMenuCompras.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="FormMenuPrincipal.Designer.vb">
       <DependentUpon>FormMenuPrincipal.vb</DependentUpon>
     </Compile>
     <Compile Include="FormMenuPrincipal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMenuProductos.Designer.vb">
+      <DependentUpon>FormMenuProductos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormMenuProductos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMenuProveedores.Designer.vb">
+      <DependentUpon>FormMenuProveedores.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormMenuProveedores.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMenuReportes.Designer.vb">
+      <DependentUpon>FormMenuReportes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormMenuReportes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMenuUsuario.Designer.vb">
+      <DependentUpon>FormMenuUsuario.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormMenuUsuario.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMenuVentas.Designer.vb">
+      <DependentUpon>FormMenuVentas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormMenuVentas.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -113,8 +155,29 @@
     <EmbeddedResource Include="FormInicioSesion.resx">
       <DependentUpon>FormInicioSesion.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormMenuClientes.resx">
+      <DependentUpon>FormMenuClientes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMenuCompras.resx">
+      <DependentUpon>FormMenuCompras.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormMenuPrincipal.resx">
       <DependentUpon>FormMenuPrincipal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMenuProductos.resx">
+      <DependentUpon>FormMenuProductos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMenuProveedores.resx">
+      <DependentUpon>FormMenuProveedores.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMenuReportes.resx">
+      <DependentUpon>FormMenuReportes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMenuUsuario.resx">
+      <DependentUpon>FormMenuUsuario.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMenuVentas.resx">
+      <DependentUpon>FormMenuVentas.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
