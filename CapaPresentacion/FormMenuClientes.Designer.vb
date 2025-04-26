@@ -22,6 +22,7 @@ Partial Class FormMenuClientes
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FormMenuClientes))
         Me.PanelSuperior = New System.Windows.Forms.Panel()
         Me.PanelInfo2 = New System.Windows.Forms.Panel()
         Me.Label2 = New System.Windows.Forms.Label()
@@ -36,6 +37,8 @@ Partial Class FormMenuClientes
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.IconButton1 = New FontAwesome.Sharp.IconButton()
+        Me.btnAgregar = New FontAwesome.Sharp.IconButton()
         Me.PanelSuperior.SuspendLayout()
         Me.PanelInfo2.SuspendLayout()
         Me.Panel4.SuspendLayout()
@@ -197,12 +200,52 @@ Partial Class FormMenuClientes
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "Total de Clientes"
         '
+        'IconButton1
+        '
+        Me.IconButton1.FlatAppearance.BorderSize = 2
+        Me.IconButton1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.IconButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.IconButton1.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.IconButton1.ForeColor = System.Drawing.Color.White
+        Me.IconButton1.Icon = FontAwesome.Sharp.IconChar.Plus
+        Me.IconButton1.IconColor = System.Drawing.Color.White
+        Me.IconButton1.IconSize = 16
+        Me.IconButton1.Image = CType(resources.GetObject("IconButton1.Image"), System.Drawing.Image)
+        Me.IconButton1.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.IconButton1.Location = New System.Drawing.Point(246, 265)
+        Me.IconButton1.Name = "IconButton1"
+        Me.IconButton1.Size = New System.Drawing.Size(126, 38)
+        Me.IconButton1.TabIndex = 4
+        Me.IconButton1.Text = "Modificar"
+        Me.IconButton1.UseVisualStyleBackColor = True
+        '
+        'btnAgregar
+        '
+        Me.btnAgregar.FlatAppearance.BorderSize = 2
+        Me.btnAgregar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.btnAgregar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnAgregar.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnAgregar.ForeColor = System.Drawing.Color.White
+        Me.btnAgregar.Icon = FontAwesome.Sharp.IconChar.Plus
+        Me.btnAgregar.IconColor = System.Drawing.Color.White
+        Me.btnAgregar.IconSize = 16
+        Me.btnAgregar.Image = CType(resources.GetObject("btnAgregar.Image"), System.Drawing.Image)
+        Me.btnAgregar.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.btnAgregar.Location = New System.Drawing.Point(246, 211)
+        Me.btnAgregar.Name = "btnAgregar"
+        Me.btnAgregar.Size = New System.Drawing.Size(101, 38)
+        Me.btnAgregar.TabIndex = 3
+        Me.btnAgregar.Text = "Agregar "
+        Me.btnAgregar.UseVisualStyleBackColor = True
+        '
         'FormMenuClientes
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(89, Byte), Integer), CType(CType(120, Byte), Integer), CType(CType(148, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(640, 460)
+        Me.Controls.Add(Me.IconButton1)
+        Me.Controls.Add(Me.btnAgregar)
         Me.Controls.Add(Me.PanelSuperior)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "FormMenuClientes"
@@ -239,4 +282,6 @@ Partial Class FormMenuClientes
     Friend WithEvents Label4 As Label
     Friend WithEvents Panel1 As Panel
     Friend WithEvents Label1 As Label
+    Friend WithEvents IconButton1 As FontAwesome.Sharp.IconButton
+    Friend WithEvents btnAgregar As FontAwesome.Sharp.IconButton
 End Class
