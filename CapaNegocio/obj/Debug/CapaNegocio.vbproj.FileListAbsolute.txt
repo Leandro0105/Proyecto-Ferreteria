@@ -1,0 +1,17 @@
+E:\Desktop\Proyecto_Ferreteria\CapaNegocio\bin\Debug\CapaNegocio.dll
+E:\Desktop\Proyecto_Ferreteria\CapaNegocio\bin\Debug\CapaNegocio.pdb
+E:\Desktop\Proyecto_Ferreteria\CapaNegocio\bin\Debug\CapaNegocio.xml
+E:\Desktop\Proyecto_Ferreteria\CapaNegocio\bin\Debug\CapaComun.dll
+E:\Desktop\Proyecto_Ferreteria\CapaNegocio\bin\Debug\CapaDatos.dll
+E:\Desktop\Proyecto_Ferreteria\CapaNegocio\bin\Debug\CapaComun.pdb
+E:\Desktop\Proyecto_Ferreteria\CapaNegocio\bin\Debug\CapaComun.xml
+E:\Desktop\Proyecto_Ferreteria\CapaNegocio\bin\Debug\CapaDatos.pdb
+E:\Desktop\Proyecto_Ferreteria\CapaNegocio\bin\Debug\CapaDatos.xml
+E:\Desktop\Proyecto_Ferreteria\CapaNegocio\obj\Debug\CapaNegocio.vbproj.AssemblyReference.cache
+E:\Desktop\Proyecto_Ferreteria\CapaNegocio\obj\Debug\CapaNegocio.Resources.resources
+E:\Desktop\Proyecto_Ferreteria\CapaNegocio\obj\Debug\CapaNegocio.vbproj.GenerateResource.cache
+E:\Desktop\Proyecto_Ferreteria\CapaNegocio\obj\Debug\CapaNegocio.vbproj.CoreCompileInputs.cache
+E:\Desktop\Proyecto_Ferreteria\CapaNegocio\obj\Debug\CapaNegocio.vbproj.CopyComplete
+E:\Desktop\Proyecto_Ferreteria\CapaNegocio\obj\Debug\CapaNegocio.dll
+E:\Desktop\Proyecto_Ferreteria\CapaNegocio\obj\Debug\CapaNegocio.xml
+E:\Desktop\Proyecto_Ferreteria\CapaNegocio\obj\Debug\CapaNegocio.pdb

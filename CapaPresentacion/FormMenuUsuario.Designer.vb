@@ -23,6 +23,11 @@ Partial Class FormMenuUsuario
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.PanelSuperior = New System.Windows.Forms.Panel()
+        Me.PanelInfo2 = New System.Windows.Forms.Panel()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.Panel4 = New System.Windows.Forms.Panel()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.IconoHome = New FontAwesome.Sharp.IconPictureBox()
         Me.PanelInfo3 = New System.Windows.Forms.Panel()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Panel3 = New System.Windows.Forms.Panel()
@@ -31,19 +36,14 @@ Partial Class FormMenuUsuario
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.IconoHome = New FontAwesome.Sharp.IconPictureBox()
-        Me.PanelInfo2 = New System.Windows.Forms.Panel()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.Panel4 = New System.Windows.Forms.Panel()
-        Me.Label5 = New System.Windows.Forms.Label()
         Me.PanelSuperior.SuspendLayout()
+        Me.PanelInfo2.SuspendLayout()
+        Me.Panel4.SuspendLayout()
+        CType(Me.IconoHome, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.PanelInfo3.SuspendLayout()
         Me.Panel3.SuspendLayout()
         Me.PanelInfo1.SuspendLayout()
         Me.Panel1.SuspendLayout()
-        CType(Me.IconoHome, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.PanelInfo2.SuspendLayout()
-        Me.Panel4.SuspendLayout()
         Me.SuspendLayout()
         '
         'PanelSuperior
@@ -57,6 +57,60 @@ Partial Class FormMenuUsuario
         Me.PanelSuperior.Name = "PanelSuperior"
         Me.PanelSuperior.Size = New System.Drawing.Size(640, 190)
         Me.PanelSuperior.TabIndex = 0
+        '
+        'PanelInfo2
+        '
+        Me.PanelInfo2.BackColor = System.Drawing.Color.FromArgb(CType(CType(38, Byte), Integer), CType(CType(46, Byte), Integer), CType(CType(94, Byte), Integer))
+        Me.PanelInfo2.Controls.Add(Me.Label2)
+        Me.PanelInfo2.Controls.Add(Me.Panel4)
+        Me.PanelInfo2.Location = New System.Drawing.Point(239, 55)
+        Me.PanelInfo2.Name = "PanelInfo2"
+        Me.PanelInfo2.Size = New System.Drawing.Size(162, 98)
+        Me.PanelInfo2.TabIndex = 4
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Font = New System.Drawing.Font("Century Gothic", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.ForeColor = System.Drawing.Color.White
+        Me.Label2.Location = New System.Drawing.Point(64, 41)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(30, 32)
+        Me.Label2.TabIndex = 1
+        Me.Label2.Text = "5"
+        '
+        'Panel4
+        '
+        Me.Panel4.BackColor = System.Drawing.Color.FromArgb(CType(CType(87, Byte), Integer), CType(CType(207, Byte), Integer), CType(CType(218, Byte), Integer))
+        Me.Panel4.Controls.Add(Me.Label5)
+        Me.Panel4.Location = New System.Drawing.Point(0, 0)
+        Me.Panel4.Name = "Panel4"
+        Me.Panel4.Size = New System.Drawing.Size(183, 29)
+        Me.Panel4.TabIndex = 0
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.ForeColor = System.Drawing.Color.White
+        Me.Label5.Location = New System.Drawing.Point(48, 5)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(64, 19)
+        Me.Label5.TabIndex = 0
+        Me.Label5.Text = "Activos"
+        '
+        'IconoHome
+        '
+        Me.IconoHome.ActiveColor = System.Drawing.Color.Black
+        Me.IconoHome.BackColor = System.Drawing.Color.Transparent
+        Me.IconoHome.IconChar = FontAwesome.Sharp.IconChar.Home
+        Me.IconoHome.InActiveColor = System.Drawing.Color.White
+        Me.IconoHome.Location = New System.Drawing.Point(5, 5)
+        Me.IconoHome.Name = "IconoHome"
+        Me.IconoHome.Size = New System.Drawing.Size(46, 40)
+        Me.IconoHome.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.IconoHome.TabIndex = 3
+        Me.IconoHome.TabStop = False
         '
         'PanelInfo3
         '
@@ -141,60 +195,6 @@ Partial Class FormMenuUsuario
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "Total de Usuarios"
         '
-        'IconoHome
-        '
-        Me.IconoHome.ActiveColor = System.Drawing.Color.Black
-        Me.IconoHome.BackColor = System.Drawing.Color.Transparent
-        Me.IconoHome.IconChar = FontAwesome.Sharp.IconChar.Home
-        Me.IconoHome.InActiveColor = System.Drawing.Color.White
-        Me.IconoHome.Location = New System.Drawing.Point(5, 5)
-        Me.IconoHome.Name = "IconoHome"
-        Me.IconoHome.Size = New System.Drawing.Size(46, 40)
-        Me.IconoHome.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.IconoHome.TabIndex = 3
-        Me.IconoHome.TabStop = False
-        '
-        'PanelInfo2
-        '
-        Me.PanelInfo2.BackColor = System.Drawing.Color.FromArgb(CType(CType(38, Byte), Integer), CType(CType(46, Byte), Integer), CType(CType(94, Byte), Integer))
-        Me.PanelInfo2.Controls.Add(Me.Label2)
-        Me.PanelInfo2.Controls.Add(Me.Panel4)
-        Me.PanelInfo2.Location = New System.Drawing.Point(239, 55)
-        Me.PanelInfo2.Name = "PanelInfo2"
-        Me.PanelInfo2.Size = New System.Drawing.Size(162, 98)
-        Me.PanelInfo2.TabIndex = 4
-        '
-        'Label2
-        '
-        Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Century Gothic", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.ForeColor = System.Drawing.Color.White
-        Me.Label2.Location = New System.Drawing.Point(64, 41)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(30, 32)
-        Me.Label2.TabIndex = 1
-        Me.Label2.Text = "5"
-        '
-        'Panel4
-        '
-        Me.Panel4.BackColor = System.Drawing.Color.FromArgb(CType(CType(87, Byte), Integer), CType(CType(207, Byte), Integer), CType(CType(218, Byte), Integer))
-        Me.Panel4.Controls.Add(Me.Label5)
-        Me.Panel4.Location = New System.Drawing.Point(0, 0)
-        Me.Panel4.Name = "Panel4"
-        Me.Panel4.Size = New System.Drawing.Size(183, 29)
-        Me.Panel4.TabIndex = 0
-        '
-        'Label5
-        '
-        Me.Label5.AutoSize = True
-        Me.Label5.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.ForeColor = System.Drawing.Color.White
-        Me.Label5.Location = New System.Drawing.Point(48, 5)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(64, 19)
-        Me.Label5.TabIndex = 0
-        Me.Label5.Text = "Activos"
-        '
         'FormMenuUsuario
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -206,6 +206,11 @@ Partial Class FormMenuUsuario
         Me.Name = "FormMenuUsuario"
         Me.Text = "FormMenuUsuario"
         Me.PanelSuperior.ResumeLayout(False)
+        Me.PanelInfo2.ResumeLayout(False)
+        Me.PanelInfo2.PerformLayout()
+        Me.Panel4.ResumeLayout(False)
+        Me.Panel4.PerformLayout()
+        CType(Me.IconoHome, System.ComponentModel.ISupportInitialize).EndInit()
         Me.PanelInfo3.ResumeLayout(False)
         Me.PanelInfo3.PerformLayout()
         Me.Panel3.ResumeLayout(False)
@@ -214,11 +219,6 @@ Partial Class FormMenuUsuario
         Me.PanelInfo1.PerformLayout()
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
-        CType(Me.IconoHome, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.PanelInfo2.ResumeLayout(False)
-        Me.PanelInfo2.PerformLayout()
-        Me.Panel4.ResumeLayout(False)
-        Me.Panel4.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub

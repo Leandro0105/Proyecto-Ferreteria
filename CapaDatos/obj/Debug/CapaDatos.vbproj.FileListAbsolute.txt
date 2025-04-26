@@ -1,0 +1,14 @@
+E:\Desktop\Proyecto_Ferreteria\CapaDatos\bin\Debug\CapaDatos.dll
+E:\Desktop\Proyecto_Ferreteria\CapaDatos\bin\Debug\CapaDatos.pdb
+E:\Desktop\Proyecto_Ferreteria\CapaDatos\bin\Debug\CapaDatos.xml
+E:\Desktop\Proyecto_Ferreteria\CapaDatos\bin\Debug\CapaComun.dll
+E:\Desktop\Proyecto_Ferreteria\CapaDatos\bin\Debug\CapaComun.pdb
+E:\Desktop\Proyecto_Ferreteria\CapaDatos\bin\Debug\CapaComun.xml
+E:\Desktop\Proyecto_Ferreteria\CapaDatos\obj\Debug\CapaDatos.vbproj.AssemblyReference.cache
+E:\Desktop\Proyecto_Ferreteria\CapaDatos\obj\Debug\CapaDatos.Resources.resources
+E:\Desktop\Proyecto_Ferreteria\CapaDatos\obj\Debug\CapaDatos.vbproj.GenerateResource.cache
+E:\Desktop\Proyecto_Ferreteria\CapaDatos\obj\Debug\CapaDatos.vbproj.CoreCompileInputs.cache
+E:\Desktop\Proyecto_Ferreteria\CapaDatos\obj\Debug\CapaDatos.vbproj.CopyComplete
+E:\Desktop\Proyecto_Ferreteria\CapaDatos\obj\Debug\CapaDatos.dll
+E:\Desktop\Proyecto_Ferreteria\CapaDatos\obj\Debug\CapaDatos.xml
+E:\Desktop\Proyecto_Ferreteria\CapaDatos\obj\Debug\CapaDatos.pdb

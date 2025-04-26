@@ -81,11 +81,11 @@ Partial Class FormMenuPrincipal
         'lblIndex
         '
         Me.lblIndex.AutoSize = True
-        Me.lblIndex.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblIndex.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblIndex.ForeColor = System.Drawing.Color.White
-        Me.lblIndex.Location = New System.Drawing.Point(320, 15)
+        Me.lblIndex.Location = New System.Drawing.Point(320, 13)
         Me.lblIndex.Name = "lblIndex"
-        Me.lblIndex.Size = New System.Drawing.Size(51, 16)
+        Me.lblIndex.Size = New System.Drawing.Size(61, 19)
         Me.lblIndex.TabIndex = 8
         Me.lblIndex.Text = "Label1"
         '
@@ -95,9 +95,9 @@ Partial Class FormMenuPrincipal
         Me.IconIndex.BackColor = System.Drawing.Color.Transparent
         Me.IconIndex.IconChar = FontAwesome.Sharp.IconChar.Home
         Me.IconIndex.InActiveColor = System.Drawing.Color.White
-        Me.IconIndex.Location = New System.Drawing.Point(260, 0)
+        Me.IconIndex.Location = New System.Drawing.Point(260, 4)
         Me.IconIndex.Name = "IconIndex"
-        Me.IconIndex.Size = New System.Drawing.Size(54, 45)
+        Me.IconIndex.Size = New System.Drawing.Size(54, 41)
         Me.IconIndex.TabIndex = 7
         Me.IconIndex.TabStop = False
         '
@@ -136,7 +136,7 @@ Partial Class FormMenuPrincipal
         'btnRestaurar
         '
         Me.btnRestaurar.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.btnRestaurar.Image = Global.CapaPresentacion.My.Resources.Resources.actualizar_flecha
+        Me.btnRestaurar.Image = Global.CapaPresentacion.My.Resources.Resources.minimizar
         Me.btnRestaurar.Location = New System.Drawing.Point(812, 3)
         Me.btnRestaurar.Name = "btnRestaurar"
         Me.btnRestaurar.Size = New System.Drawing.Size(38, 38)

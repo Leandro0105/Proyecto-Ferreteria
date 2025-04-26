@@ -242,5 +242,8 @@
   <ItemGroup>
     <None Include="Resources\logo_sistema.jpeg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimizar.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

@@ -60,6 +60,7 @@ Partial Class FormMenuClientes
         '
         'PanelInfo2
         '
+        Me.PanelInfo2.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.PanelInfo2.BackColor = System.Drawing.Color.FromArgb(CType(CType(38, Byte), Integer), CType(CType(46, Byte), Integer), CType(CType(94, Byte), Integer))
         Me.PanelInfo2.Controls.Add(Me.Label2)
         Me.PanelInfo2.Controls.Add(Me.Panel4)
@@ -85,7 +86,7 @@ Partial Class FormMenuClientes
         Me.Panel4.Controls.Add(Me.Label5)
         Me.Panel4.Location = New System.Drawing.Point(0, 0)
         Me.Panel4.Name = "Panel4"
-        Me.Panel4.Size = New System.Drawing.Size(183, 29)
+        Me.Panel4.Size = New System.Drawing.Size(162, 29)
         Me.Panel4.TabIndex = 0
         '
         'Label5
@@ -114,7 +115,7 @@ Partial Class FormMenuClientes
         '
         'PanelInfo3
         '
-        Me.PanelInfo3.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.PanelInfo3.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.PanelInfo3.BackColor = System.Drawing.Color.FromArgb(CType(CType(38, Byte), Integer), CType(CType(46, Byte), Integer), CType(CType(94, Byte), Integer))
         Me.PanelInfo3.Controls.Add(Me.Label6)
         Me.PanelInfo3.Controls.Add(Me.Panel3)
@@ -156,6 +157,7 @@ Partial Class FormMenuClientes
         '
         'PanelInfo1
         '
+        Me.PanelInfo1.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.PanelInfo1.BackColor = System.Drawing.Color.FromArgb(CType(CType(38, Byte), Integer), CType(CType(46, Byte), Integer), CType(CType(94, Byte), Integer))
         Me.PanelInfo1.Controls.Add(Me.Label4)
         Me.PanelInfo1.Controls.Add(Me.Panel1)
@@ -181,7 +183,7 @@ Partial Class FormMenuClientes
         Me.Panel1.Controls.Add(Me.Label1)
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(183, 29)
+        Me.Panel1.Size = New System.Drawing.Size(162, 29)
         Me.Panel1.TabIndex = 0
         '
         'Label1

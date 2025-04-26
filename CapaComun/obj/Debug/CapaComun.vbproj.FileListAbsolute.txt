@@ -1,0 +1,10 @@
+E:\Desktop\Proyecto_Ferreteria\CapaComun\bin\Debug\CapaComun.dll
+E:\Desktop\Proyecto_Ferreteria\CapaComun\bin\Debug\CapaComun.pdb
+E:\Desktop\Proyecto_Ferreteria\CapaComun\bin\Debug\CapaComun.xml
+E:\Desktop\Proyecto_Ferreteria\CapaComun\obj\Debug\CapaComun.vbproj.AssemblyReference.cache
+E:\Desktop\Proyecto_Ferreteria\CapaComun\obj\Debug\CapaComun.Resources.resources
+E:\Desktop\Proyecto_Ferreteria\CapaComun\obj\Debug\CapaComun.vbproj.GenerateResource.cache
+E:\Desktop\Proyecto_Ferreteria\CapaComun\obj\Debug\CapaComun.vbproj.CoreCompileInputs.cache
+E:\Desktop\Proyecto_Ferreteria\CapaComun\obj\Debug\CapaComun.dll
+E:\Desktop\Proyecto_Ferreteria\CapaComun\obj\Debug\CapaComun.xml
+E:\Desktop\Proyecto_Ferreteria\CapaComun\obj\Debug\CapaComun.pdb
