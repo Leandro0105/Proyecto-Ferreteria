@@ -22,6 +22,7 @@ Partial Class FormMenuUsuario
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FormMenuUsuario))
         Me.PanelSuperior = New System.Windows.Forms.Panel()
         Me.PanelInfo2 = New System.Windows.Forms.Panel()
         Me.Label2 = New System.Windows.Forms.Label()
@@ -36,6 +37,7 @@ Partial Class FormMenuUsuario
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.btnAgregar = New FontAwesome.Sharp.IconButton()
         Me.PanelSuperior.SuspendLayout()
         Me.PanelInfo2.SuspendLayout()
         Me.Panel4.SuspendLayout()
@@ -195,12 +197,32 @@ Partial Class FormMenuUsuario
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "Total de Usuarios"
         '
+        'btnAgregar
+        '
+        Me.btnAgregar.FlatAppearance.BorderSize = 2
+        Me.btnAgregar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.btnAgregar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnAgregar.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnAgregar.ForeColor = System.Drawing.Color.White
+        Me.btnAgregar.Icon = FontAwesome.Sharp.IconChar.Plus
+        Me.btnAgregar.IconColor = System.Drawing.Color.White
+        Me.btnAgregar.IconSize = 16
+        Me.btnAgregar.Image = CType(resources.GetObject("btnAgregar.Image"), System.Drawing.Image)
+        Me.btnAgregar.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.btnAgregar.Location = New System.Drawing.Point(41, 219)
+        Me.btnAgregar.Name = "btnAgregar"
+        Me.btnAgregar.Size = New System.Drawing.Size(101, 38)
+        Me.btnAgregar.TabIndex = 1
+        Me.btnAgregar.Text = "Agregar "
+        Me.btnAgregar.UseVisualStyleBackColor = True
+        '
         'FormMenuUsuario
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(89, Byte), Integer), CType(CType(120, Byte), Integer), CType(CType(148, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(640, 460)
+        Me.Controls.Add(Me.btnAgregar)
         Me.Controls.Add(Me.PanelSuperior)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "FormMenuUsuario"
@@ -237,4 +259,5 @@ Partial Class FormMenuUsuario
     Friend WithEvents Label2 As Label
     Friend WithEvents Panel4 As Panel
     Friend WithEvents Label5 As Label
+    Friend WithEvents btnAgregar As FontAwesome.Sharp.IconButton
 End Class
