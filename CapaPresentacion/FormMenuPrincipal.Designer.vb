@@ -91,7 +91,7 @@ Partial Class FormMenuPrincipal
         '
         'IconIndex
         '
-        Me.IconIndex.ActiveColor = System.Drawing.Color.Black
+        Me.IconIndex.ActiveColor = System.Drawing.Color.White
         Me.IconIndex.BackColor = System.Drawing.Color.Transparent
         Me.IconIndex.IconChar = FontAwesome.Sharp.IconChar.Home
         Me.IconIndex.InActiveColor = System.Drawing.Color.White
@@ -230,6 +230,7 @@ Partial Class FormMenuPrincipal
         '
         'btnReportes
         '
+        Me.btnReportes.BackColor = System.Drawing.Color.FromArgb(CType(CType(89, Byte), Integer), CType(CType(120, Byte), Integer), CType(CType(148, Byte), Integer))
         Me.btnReportes.FlatAppearance.BorderSize = 0
         Me.btnReportes.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnReportes.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -239,15 +240,16 @@ Partial Class FormMenuPrincipal
         Me.btnReportes.IconSize = 40
         Me.btnReportes.Image = CType(resources.GetObject("btnReportes.Image"), System.Drawing.Image)
         Me.btnReportes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnReportes.Location = New System.Drawing.Point(0, 393)
+        Me.btnReportes.Location = New System.Drawing.Point(0, 389)
         Me.btnReportes.Name = "btnReportes"
         Me.btnReportes.Size = New System.Drawing.Size(260, 65)
         Me.btnReportes.TabIndex = 6
         Me.btnReportes.Text = "Reportes"
-        Me.btnReportes.UseVisualStyleBackColor = True
+        Me.btnReportes.UseVisualStyleBackColor = False
         '
         'btnVentas
         '
+        Me.btnVentas.BackColor = System.Drawing.Color.FromArgb(CType(CType(89, Byte), Integer), CType(CType(120, Byte), Integer), CType(CType(148, Byte), Integer))
         Me.btnVentas.FlatAppearance.BorderSize = 0
         Me.btnVentas.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnVentas.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -257,15 +259,16 @@ Partial Class FormMenuPrincipal
         Me.btnVentas.IconSize = 40
         Me.btnVentas.Image = CType(resources.GetObject("btnVentas.Image"), System.Drawing.Image)
         Me.btnVentas.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnVentas.Location = New System.Drawing.Point(0, 328)
+        Me.btnVentas.Location = New System.Drawing.Point(0, 324)
         Me.btnVentas.Name = "btnVentas"
         Me.btnVentas.Size = New System.Drawing.Size(260, 65)
         Me.btnVentas.TabIndex = 5
         Me.btnVentas.Text = "Ventas"
-        Me.btnVentas.UseVisualStyleBackColor = True
+        Me.btnVentas.UseVisualStyleBackColor = False
         '
         'btnCompras
         '
+        Me.btnCompras.BackColor = System.Drawing.Color.FromArgb(CType(CType(89, Byte), Integer), CType(CType(120, Byte), Integer), CType(CType(148, Byte), Integer))
         Me.btnCompras.FlatAppearance.BorderSize = 0
         Me.btnCompras.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnCompras.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -275,15 +278,16 @@ Partial Class FormMenuPrincipal
         Me.btnCompras.IconSize = 40
         Me.btnCompras.Image = CType(resources.GetObject("btnCompras.Image"), System.Drawing.Image)
         Me.btnCompras.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnCompras.Location = New System.Drawing.Point(0, 263)
+        Me.btnCompras.Location = New System.Drawing.Point(0, 259)
         Me.btnCompras.Name = "btnCompras"
         Me.btnCompras.Size = New System.Drawing.Size(260, 65)
         Me.btnCompras.TabIndex = 4
         Me.btnCompras.Text = "Compras"
-        Me.btnCompras.UseVisualStyleBackColor = True
+        Me.btnCompras.UseVisualStyleBackColor = False
         '
         'btnProductos
         '
+        Me.btnProductos.BackColor = System.Drawing.Color.FromArgb(CType(CType(89, Byte), Integer), CType(CType(120, Byte), Integer), CType(CType(148, Byte), Integer))
         Me.btnProductos.FlatAppearance.BorderSize = 0
         Me.btnProductos.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnProductos.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -293,15 +297,16 @@ Partial Class FormMenuPrincipal
         Me.btnProductos.IconSize = 40
         Me.btnProductos.Image = CType(resources.GetObject("btnProductos.Image"), System.Drawing.Image)
         Me.btnProductos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnProductos.Location = New System.Drawing.Point(0, 198)
+        Me.btnProductos.Location = New System.Drawing.Point(0, 194)
         Me.btnProductos.Name = "btnProductos"
         Me.btnProductos.Size = New System.Drawing.Size(260, 65)
         Me.btnProductos.TabIndex = 3
         Me.btnProductos.Text = "Productos"
-        Me.btnProductos.UseVisualStyleBackColor = True
+        Me.btnProductos.UseVisualStyleBackColor = False
         '
         'btnProveedores
         '
+        Me.btnProveedores.BackColor = System.Drawing.Color.FromArgb(CType(CType(89, Byte), Integer), CType(CType(120, Byte), Integer), CType(CType(148, Byte), Integer))
         Me.btnProveedores.FlatAppearance.BorderSize = 0
         Me.btnProveedores.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnProveedores.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -311,15 +316,16 @@ Partial Class FormMenuPrincipal
         Me.btnProveedores.IconSize = 40
         Me.btnProveedores.Image = CType(resources.GetObject("btnProveedores.Image"), System.Drawing.Image)
         Me.btnProveedores.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnProveedores.Location = New System.Drawing.Point(0, 133)
+        Me.btnProveedores.Location = New System.Drawing.Point(0, 129)
         Me.btnProveedores.Name = "btnProveedores"
         Me.btnProveedores.Size = New System.Drawing.Size(260, 65)
         Me.btnProveedores.TabIndex = 2
         Me.btnProveedores.Text = "Proveedores"
-        Me.btnProveedores.UseVisualStyleBackColor = True
+        Me.btnProveedores.UseVisualStyleBackColor = False
         '
         'btnClientes
         '
+        Me.btnClientes.BackColor = System.Drawing.Color.FromArgb(CType(CType(89, Byte), Integer), CType(CType(120, Byte), Integer), CType(CType(148, Byte), Integer))
         Me.btnClientes.FlatAppearance.BorderSize = 0
         Me.btnClientes.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnClientes.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -329,15 +335,16 @@ Partial Class FormMenuPrincipal
         Me.btnClientes.IconSize = 40
         Me.btnClientes.Image = CType(resources.GetObject("btnClientes.Image"), System.Drawing.Image)
         Me.btnClientes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnClientes.Location = New System.Drawing.Point(0, 66)
+        Me.btnClientes.Location = New System.Drawing.Point(0, 64)
         Me.btnClientes.Name = "btnClientes"
         Me.btnClientes.Size = New System.Drawing.Size(260, 65)
         Me.btnClientes.TabIndex = 1
         Me.btnClientes.Text = "Clientes"
-        Me.btnClientes.UseVisualStyleBackColor = True
+        Me.btnClientes.UseVisualStyleBackColor = False
         '
         'btnUsuarios
         '
+        Me.btnUsuarios.BackColor = System.Drawing.Color.FromArgb(CType(CType(89, Byte), Integer), CType(CType(120, Byte), Integer), CType(CType(148, Byte), Integer))
         Me.btnUsuarios.FlatAppearance.BorderSize = 0
         Me.btnUsuarios.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnUsuarios.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -352,7 +359,7 @@ Partial Class FormMenuPrincipal
         Me.btnUsuarios.Size = New System.Drawing.Size(260, 65)
         Me.btnUsuarios.TabIndex = 0
         Me.btnUsuarios.Text = "Usuarios"
-        Me.btnUsuarios.UseVisualStyleBackColor = True
+        Me.btnUsuarios.UseVisualStyleBackColor = False
         '
         'PanelContenedor
         '

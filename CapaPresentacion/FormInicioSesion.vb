@@ -48,4 +48,8 @@ Public Class FormInicioSesion
         botonPath.AddEllipse(rectangulo)
         btnIniciarSesion.Region = New Region(botonPath)
     End Sub
+
+    Private Sub FormInicioSesion_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+    End Sub
 End Class

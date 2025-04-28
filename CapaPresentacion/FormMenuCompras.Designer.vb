@@ -36,6 +36,17 @@ Partial Class FormMenuCompras
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.PanelContenedor = New System.Windows.Forms.Panel()
+        Me.btnAgregarOC = New System.Windows.Forms.Button()
+        Me.btnRecepcionOC = New System.Windows.Forms.Button()
+        Me.btnDevolucionMercaderia = New System.Windows.Forms.Button()
+        Me.btnConsultarOCPendientes = New System.Windows.Forms.Button()
+        Me.dgvListadoCompras = New System.Windows.Forms.DataGridView()
+        Me.Label7 = New System.Windows.Forms.Label()
+        Me.Column1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.PanelSuperior.SuspendLayout()
         Me.PanelInfo2.SuspendLayout()
         Me.Panel4.SuspendLayout()
@@ -44,6 +55,9 @@ Partial Class FormMenuCompras
         Me.Panel3.SuspendLayout()
         Me.PanelInfo1.SuspendLayout()
         Me.Panel1.SuspendLayout()
+        Me.Panel2.SuspendLayout()
+        Me.PanelContenedor.SuspendLayout()
+        CType(Me.dgvListadoCompras, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'PanelSuperior
@@ -104,7 +118,7 @@ Partial Class FormMenuCompras
         Me.IconoHome.ActiveColor = System.Drawing.Color.Black
         Me.IconoHome.BackColor = System.Drawing.Color.Transparent
         Me.IconoHome.IconChar = FontAwesome.Sharp.IconChar.Home
-        Me.IconoHome.InActiveColor = System.Drawing.Color.White
+        Me.IconoHome.InActiveColor = System.Drawing.Color.FromArgb(CType(CType(38, Byte), Integer), CType(CType(46, Byte), Integer), CType(CType(94, Byte), Integer))
         Me.IconoHome.Location = New System.Drawing.Point(5, 5)
         Me.IconoHome.Name = "IconoHome"
         Me.IconoHome.Size = New System.Drawing.Size(46, 40)
@@ -195,12 +209,135 @@ Partial Class FormMenuCompras
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "Total de Compras"
         '
+        'Panel2
+        '
+        Me.Panel2.Controls.Add(Me.btnConsultarOCPendientes)
+        Me.Panel2.Controls.Add(Me.btnDevolucionMercaderia)
+        Me.Panel2.Controls.Add(Me.btnRecepcionOC)
+        Me.Panel2.Controls.Add(Me.btnAgregarOC)
+        Me.Panel2.Dock = System.Windows.Forms.DockStyle.Left
+        Me.Panel2.Location = New System.Drawing.Point(0, 190)
+        Me.Panel2.Name = "Panel2"
+        Me.Panel2.Size = New System.Drawing.Size(251, 270)
+        Me.Panel2.TabIndex = 3
+        '
+        'PanelContenedor
+        '
+        Me.PanelContenedor.Controls.Add(Me.Label7)
+        Me.PanelContenedor.Controls.Add(Me.dgvListadoCompras)
+        Me.PanelContenedor.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.PanelContenedor.Location = New System.Drawing.Point(251, 190)
+        Me.PanelContenedor.Name = "PanelContenedor"
+        Me.PanelContenedor.Size = New System.Drawing.Size(389, 270)
+        Me.PanelContenedor.TabIndex = 4
+        '
+        'btnAgregarOC
+        '
+        Me.btnAgregarOC.BackColor = System.Drawing.Color.FromArgb(CType(CType(89, Byte), Integer), CType(CType(120, Byte), Integer), CType(CType(148, Byte), Integer))
+        Me.btnAgregarOC.FlatAppearance.BorderSize = 0
+        Me.btnAgregarOC.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnAgregarOC.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnAgregarOC.ForeColor = System.Drawing.Color.White
+        Me.btnAgregarOC.Location = New System.Drawing.Point(44, 20)
+        Me.btnAgregarOC.Name = "btnAgregarOC"
+        Me.btnAgregarOC.Size = New System.Drawing.Size(159, 45)
+        Me.btnAgregarOC.TabIndex = 0
+        Me.btnAgregarOC.Text = "Nueva Orden de Compra"
+        Me.btnAgregarOC.UseVisualStyleBackColor = False
+        '
+        'btnRecepcionOC
+        '
+        Me.btnRecepcionOC.BackColor = System.Drawing.Color.FromArgb(CType(CType(89, Byte), Integer), CType(CType(120, Byte), Integer), CType(CType(148, Byte), Integer))
+        Me.btnRecepcionOC.FlatAppearance.BorderSize = 0
+        Me.btnRecepcionOC.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnRecepcionOC.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnRecepcionOC.ForeColor = System.Drawing.Color.White
+        Me.btnRecepcionOC.Location = New System.Drawing.Point(44, 78)
+        Me.btnRecepcionOC.Name = "btnRecepcionOC"
+        Me.btnRecepcionOC.Size = New System.Drawing.Size(159, 45)
+        Me.btnRecepcionOC.TabIndex = 1
+        Me.btnRecepcionOC.Text = "Recepción de Mercadería por OC"
+        Me.btnRecepcionOC.UseVisualStyleBackColor = False
+        '
+        'btnDevolucionMercaderia
+        '
+        Me.btnDevolucionMercaderia.BackColor = System.Drawing.Color.FromArgb(CType(CType(89, Byte), Integer), CType(CType(120, Byte), Integer), CType(CType(148, Byte), Integer))
+        Me.btnDevolucionMercaderia.FlatAppearance.BorderSize = 0
+        Me.btnDevolucionMercaderia.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnDevolucionMercaderia.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnDevolucionMercaderia.ForeColor = System.Drawing.Color.White
+        Me.btnDevolucionMercaderia.Location = New System.Drawing.Point(44, 139)
+        Me.btnDevolucionMercaderia.Name = "btnDevolucionMercaderia"
+        Me.btnDevolucionMercaderia.Size = New System.Drawing.Size(159, 45)
+        Me.btnDevolucionMercaderia.TabIndex = 2
+        Me.btnDevolucionMercaderia.Text = "Devolución Mercadería"
+        Me.btnDevolucionMercaderia.UseVisualStyleBackColor = False
+        '
+        'btnConsultarOCPendientes
+        '
+        Me.btnConsultarOCPendientes.BackColor = System.Drawing.Color.FromArgb(CType(CType(89, Byte), Integer), CType(CType(120, Byte), Integer), CType(CType(148, Byte), Integer))
+        Me.btnConsultarOCPendientes.FlatAppearance.BorderSize = 0
+        Me.btnConsultarOCPendientes.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnConsultarOCPendientes.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnConsultarOCPendientes.ForeColor = System.Drawing.Color.White
+        Me.btnConsultarOCPendientes.Location = New System.Drawing.Point(44, 202)
+        Me.btnConsultarOCPendientes.Name = "btnConsultarOCPendientes"
+        Me.btnConsultarOCPendientes.Size = New System.Drawing.Size(159, 45)
+        Me.btnConsultarOCPendientes.TabIndex = 3
+        Me.btnConsultarOCPendientes.Text = "Consultar Pendientes"
+        Me.btnConsultarOCPendientes.UseVisualStyleBackColor = False
+        '
+        'dgvListadoCompras
+        '
+        Me.dgvListadoCompras.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.dgvListadoCompras.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.dgvListadoCompras.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Column1, Me.Column2, Me.Column3})
+        Me.dgvListadoCompras.Location = New System.Drawing.Point(27, 58)
+        Me.dgvListadoCompras.Name = "dgvListadoCompras"
+        Me.dgvListadoCompras.RowHeadersVisible = False
+        Me.dgvListadoCompras.Size = New System.Drawing.Size(332, 189)
+        Me.dgvListadoCompras.TabIndex = 0
+        '
+        'Label7
+        '
+        Me.Label7.AutoSize = True
+        Me.Label7.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label7.Location = New System.Drawing.Point(122, 26)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(125, 19)
+        Me.Label7.TabIndex = 1
+        Me.Label7.Text = "Utimos Ingresos"
+        '
+        'Column1
+        '
+        Me.Column1.Frozen = True
+        Me.Column1.HeaderText = "Proveedor"
+        Me.Column1.Name = "Column1"
+        Me.Column1.ReadOnly = True
+        '
+        'Column2
+        '
+        Me.Column2.Frozen = True
+        Me.Column2.HeaderText = "Producto"
+        Me.Column2.Name = "Column2"
+        Me.Column2.ReadOnly = True
+        '
+        'Column3
+        '
+        Me.Column3.Frozen = True
+        Me.Column3.HeaderText = "Fecha"
+        Me.Column3.Name = "Column3"
+        Me.Column3.ReadOnly = True
+        '
         'FormMenuCompras
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(89, Byte), Integer), CType(CType(120, Byte), Integer), CType(CType(148, Byte), Integer))
+        Me.BackColor = System.Drawing.Color.Gainsboro
         Me.ClientSize = New System.Drawing.Size(640, 460)
+        Me.Controls.Add(Me.PanelContenedor)
+        Me.Controls.Add(Me.Panel2)
         Me.Controls.Add(Me.PanelSuperior)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "FormMenuCompras"
@@ -219,6 +356,10 @@ Partial Class FormMenuCompras
         Me.PanelInfo1.PerformLayout()
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
+        Me.Panel2.ResumeLayout(False)
+        Me.PanelContenedor.ResumeLayout(False)
+        Me.PanelContenedor.PerformLayout()
+        CType(Me.dgvListadoCompras, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -237,4 +378,15 @@ Partial Class FormMenuCompras
     Friend WithEvents Label4 As Label
     Friend WithEvents Panel1 As Panel
     Friend WithEvents Label1 As Label
+    Friend WithEvents Panel2 As Panel
+    Friend WithEvents PanelContenedor As Panel
+    Friend WithEvents btnAgregarOC As Button
+    Friend WithEvents btnConsultarOCPendientes As Button
+    Friend WithEvents btnDevolucionMercaderia As Button
+    Friend WithEvents btnRecepcionOC As Button
+    Friend WithEvents Label7 As Label
+    Friend WithEvents dgvListadoCompras As DataGridView
+    Friend WithEvents Column1 As DataGridViewTextBoxColumn
+    Friend WithEvents Column2 As DataGridViewTextBoxColumn
+    Friend WithEvents Column3 As DataGridViewTextBoxColumn
 End Class

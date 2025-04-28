@@ -1,5 +1,6 @@
 ﻿Imports CapaComun
 Imports System.Runtime.InteropServices
+Imports System.Drawing.Drawing2D
 Public Class FormMenuUsuario
 
 #Region "Personalizacion del FormUsuarios"
@@ -31,9 +32,21 @@ Public Class FormMenuUsuario
         CentrarLabelsInfo(PanelInfo1)
         CentrarLabelsInfo(PanelInfo2)
         CentrarLabelsInfo(PanelInfo3)
-
-
+        CentrarLabelDataGridView(PanelContenedor)
     End Sub
+
+    Private Sub RedondearBoton(ByVal btn As Button)
+        Dim radio As Integer = 35
+        Dim path As New GraphicsPath
+        path.StartFigure()
+        path.AddArc(New Rectangle(0, 0, radio, radio), 180, 90)
+        path.AddArc(New Rectangle(btn.Width - radio, 0, radio, radio), 270, 90)
+        path.AddArc(New Rectangle(btn.Width - radio, btn.Height - radio, radio, radio), 0, 90)
+        path.AddArc(New Rectangle(0, btn.Height - radio, radio, radio), 90, 90)
+        path.CloseFigure()
+        btn.Region = New Region(path)
+    End Sub
+
 
     Private Sub CentrarLabelsEncabezados(pnl As Panel)
         If pnl.Controls.Count > 0 Then
@@ -55,6 +68,16 @@ Public Class FormMenuUsuario
         End If
     End Sub
 
+
+    Private Sub CentrarLabelDataGridView(pnl As Panel)
+        If pnl.Controls.Count > 0 Then
+            Dim lbl As Label = TryCast(pnl.Controls(0), Label)
+            If lbl IsNot Nothing Then
+                lbl.Left = (pnl.Width - lbl.Width) / 2
+            End If
+        End If
+    End Sub
+
     Private Sub AplicarBordesRedondeados()
         Dim radio As Integer = 20
         PanelInfo1.Region = Region.FromHrgn(CrearRoundRectRgn(0, 0, PanelInfo1.Width, PanelInfo1.Height, radio, radio))
@@ -62,10 +85,19 @@ Public Class FormMenuUsuario
         PanelInfo3.Region = Region.FromHrgn(CrearRoundRectRgn(0, 0, PanelInfo3.Width, PanelInfo3.Height, radio, radio))
     End Sub
 
+    Private Sub AjustarAnchoColumnas()
+        Dim anchoTotal As Integer = dgvListadoUsuarios.ClientSize.Width
+        dgvListadoUsuarios.Columns(0).Width = CInt(anchoTotal * 0.5)
+        dgvListadoUsuarios.Columns(1).Width = CInt(anchoTotal * 0.5)
+        dgvListadoUsuarios.Columns(0).HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleCenter
+        dgvListadoUsuarios.Columns(1).HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleCenter
+    End Sub
+
 #End Region
     Private Sub FormMenuUsuario_Resize(sender As Object, e As EventArgs) Handles MyBase.Resize
         AjustarPaneles()
         AplicarBordesRedondeados()
+        AjustarAnchoColumnas()
     End Sub
 
 
@@ -76,6 +108,10 @@ Public Class FormMenuUsuario
     End Sub
 
     Private Sub FormMenuUsuario_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
+        RedondearBoton(btnAgregarUsuario)
+        RedondearBoton(btnModificarUsuario)
+        RedondearBoton(btnEliminarUsuario)
     End Sub
+
+
 End Class

@@ -36,6 +36,19 @@ Partial Class FormMenuProductos
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.btnActualizarListaPrecios = New System.Windows.Forms.Button()
+        Me.btnInventario = New System.Windows.Forms.Button()
+        Me.btnEliminarProducto = New System.Windows.Forms.Button()
+        Me.btnActualizarProducto = New System.Windows.Forms.Button()
+        Me.btnAgregarProducto = New System.Windows.Forms.Button()
+        Me.PanelContenedor = New System.Windows.Forms.Panel()
+        Me.Label7 = New System.Windows.Forms.Label()
+        Me.dgvListadoProductos = New System.Windows.Forms.DataGridView()
+        Me.Column1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.PanelSuperior.SuspendLayout()
         Me.PanelInfo2.SuspendLayout()
         Me.Panel4.SuspendLayout()
@@ -44,6 +57,9 @@ Partial Class FormMenuProductos
         Me.Panel3.SuspendLayout()
         Me.PanelInfo1.SuspendLayout()
         Me.Panel1.SuspendLayout()
+        Me.Panel2.SuspendLayout()
+        Me.PanelContenedor.SuspendLayout()
+        CType(Me.dgvListadoProductos, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'PanelSuperior
@@ -104,7 +120,7 @@ Partial Class FormMenuProductos
         Me.IconoHome.ActiveColor = System.Drawing.Color.Black
         Me.IconoHome.BackColor = System.Drawing.Color.Transparent
         Me.IconoHome.IconChar = FontAwesome.Sharp.IconChar.Home
-        Me.IconoHome.InActiveColor = System.Drawing.Color.White
+        Me.IconoHome.InActiveColor = System.Drawing.Color.FromArgb(CType(CType(38, Byte), Integer), CType(CType(46, Byte), Integer), CType(CType(94, Byte), Integer))
         Me.IconoHome.Location = New System.Drawing.Point(5, 5)
         Me.IconoHome.Name = "IconoHome"
         Me.IconoHome.Size = New System.Drawing.Size(46, 40)
@@ -195,12 +211,157 @@ Partial Class FormMenuProductos
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "Total de Productos"
         '
+        'Panel2
+        '
+        Me.Panel2.Controls.Add(Me.btnActualizarListaPrecios)
+        Me.Panel2.Controls.Add(Me.btnInventario)
+        Me.Panel2.Controls.Add(Me.btnEliminarProducto)
+        Me.Panel2.Controls.Add(Me.btnActualizarProducto)
+        Me.Panel2.Controls.Add(Me.btnAgregarProducto)
+        Me.Panel2.Dock = System.Windows.Forms.DockStyle.Left
+        Me.Panel2.Location = New System.Drawing.Point(0, 190)
+        Me.Panel2.Name = "Panel2"
+        Me.Panel2.Size = New System.Drawing.Size(228, 270)
+        Me.Panel2.TabIndex = 3
+        '
+        'btnActualizarListaPrecios
+        '
+        Me.btnActualizarListaPrecios.BackColor = System.Drawing.Color.FromArgb(CType(CType(89, Byte), Integer), CType(CType(120, Byte), Integer), CType(CType(148, Byte), Integer))
+        Me.btnActualizarListaPrecios.FlatAppearance.BorderSize = 0
+        Me.btnActualizarListaPrecios.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnActualizarListaPrecios.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnActualizarListaPrecios.ForeColor = System.Drawing.Color.White
+        Me.btnActualizarListaPrecios.Location = New System.Drawing.Point(29, 220)
+        Me.btnActualizarListaPrecios.Name = "btnActualizarListaPrecios"
+        Me.btnActualizarListaPrecios.Size = New System.Drawing.Size(159, 41)
+        Me.btnActualizarListaPrecios.TabIndex = 5
+        Me.btnActualizarListaPrecios.Text = "Actualizar con Lista de Precios"
+        Me.btnActualizarListaPrecios.UseVisualStyleBackColor = False
+        '
+        'btnInventario
+        '
+        Me.btnInventario.BackColor = System.Drawing.Color.FromArgb(CType(CType(89, Byte), Integer), CType(CType(120, Byte), Integer), CType(CType(148, Byte), Integer))
+        Me.btnInventario.FlatAppearance.BorderSize = 0
+        Me.btnInventario.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnInventario.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnInventario.ForeColor = System.Drawing.Color.White
+        Me.btnInventario.Location = New System.Drawing.Point(29, 178)
+        Me.btnInventario.Name = "btnInventario"
+        Me.btnInventario.Size = New System.Drawing.Size(159, 36)
+        Me.btnInventario.TabIndex = 4
+        Me.btnInventario.Text = "Inventario"
+        Me.btnInventario.UseVisualStyleBackColor = False
+        '
+        'btnEliminarProducto
+        '
+        Me.btnEliminarProducto.BackColor = System.Drawing.Color.FromArgb(CType(CType(89, Byte), Integer), CType(CType(120, Byte), Integer), CType(CType(148, Byte), Integer))
+        Me.btnEliminarProducto.FlatAppearance.BorderSize = 0
+        Me.btnEliminarProducto.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnEliminarProducto.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnEliminarProducto.ForeColor = System.Drawing.Color.White
+        Me.btnEliminarProducto.Location = New System.Drawing.Point(29, 136)
+        Me.btnEliminarProducto.Name = "btnEliminarProducto"
+        Me.btnEliminarProducto.Size = New System.Drawing.Size(159, 36)
+        Me.btnEliminarProducto.TabIndex = 3
+        Me.btnEliminarProducto.Text = "Eliminar"
+        Me.btnEliminarProducto.UseVisualStyleBackColor = False
+        '
+        'btnActualizarProducto
+        '
+        Me.btnActualizarProducto.BackColor = System.Drawing.Color.FromArgb(CType(CType(89, Byte), Integer), CType(CType(120, Byte), Integer), CType(CType(148, Byte), Integer))
+        Me.btnActualizarProducto.FlatAppearance.BorderSize = 0
+        Me.btnActualizarProducto.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnActualizarProducto.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnActualizarProducto.ForeColor = System.Drawing.Color.White
+        Me.btnActualizarProducto.Location = New System.Drawing.Point(29, 94)
+        Me.btnActualizarProducto.Name = "btnActualizarProducto"
+        Me.btnActualizarProducto.Size = New System.Drawing.Size(159, 36)
+        Me.btnActualizarProducto.TabIndex = 2
+        Me.btnActualizarProducto.Text = "Actualizar"
+        Me.btnActualizarProducto.UseVisualStyleBackColor = False
+        '
+        'btnAgregarProducto
+        '
+        Me.btnAgregarProducto.BackColor = System.Drawing.Color.FromArgb(CType(CType(89, Byte), Integer), CType(CType(120, Byte), Integer), CType(CType(148, Byte), Integer))
+        Me.btnAgregarProducto.FlatAppearance.BorderSize = 0
+        Me.btnAgregarProducto.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnAgregarProducto.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnAgregarProducto.ForeColor = System.Drawing.Color.White
+        Me.btnAgregarProducto.Location = New System.Drawing.Point(29, 52)
+        Me.btnAgregarProducto.Name = "btnAgregarProducto"
+        Me.btnAgregarProducto.Size = New System.Drawing.Size(159, 36)
+        Me.btnAgregarProducto.TabIndex = 1
+        Me.btnAgregarProducto.Text = "Agregar"
+        Me.btnAgregarProducto.UseVisualStyleBackColor = False
+        '
+        'PanelContenedor
+        '
+        Me.PanelContenedor.Controls.Add(Me.Label7)
+        Me.PanelContenedor.Controls.Add(Me.dgvListadoProductos)
+        Me.PanelContenedor.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.PanelContenedor.Location = New System.Drawing.Point(228, 190)
+        Me.PanelContenedor.Name = "PanelContenedor"
+        Me.PanelContenedor.Size = New System.Drawing.Size(412, 270)
+        Me.PanelContenedor.TabIndex = 4
+        '
+        'Label7
+        '
+        Me.Label7.AutoSize = True
+        Me.Label7.Font = New System.Drawing.Font("Century Gothic", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label7.Location = New System.Drawing.Point(184, 26)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(201, 23)
+        Me.Label7.TabIndex = 1
+        Me.Label7.Text = "Listado de Productos"
+        '
+        'dgvListadoProductos
+        '
+        Me.dgvListadoProductos.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.dgvListadoProductos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.dgvListadoProductos.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Column1, Me.Column2, Me.Column3, Me.Column4})
+        Me.dgvListadoProductos.Location = New System.Drawing.Point(16, 54)
+        Me.dgvListadoProductos.Name = "dgvListadoProductos"
+        Me.dgvListadoProductos.RowHeadersVisible = False
+        Me.dgvListadoProductos.Size = New System.Drawing.Size(384, 204)
+        Me.dgvListadoProductos.TabIndex = 0
+        '
+        'Column1
+        '
+        Me.Column1.Frozen = True
+        Me.Column1.HeaderText = "Codigo"
+        Me.Column1.Name = "Column1"
+        Me.Column1.ReadOnly = True
+        '
+        'Column2
+        '
+        Me.Column2.Frozen = True
+        Me.Column2.HeaderText = "Descripcion"
+        Me.Column2.Name = "Column2"
+        Me.Column2.ReadOnly = True
+        '
+        'Column3
+        '
+        Me.Column3.Frozen = True
+        Me.Column3.HeaderText = "Costo"
+        Me.Column3.Name = "Column3"
+        Me.Column3.ReadOnly = True
+        '
+        'Column4
+        '
+        Me.Column4.Frozen = True
+        Me.Column4.HeaderText = "Venta"
+        Me.Column4.Name = "Column4"
+        Me.Column4.ReadOnly = True
+        '
         'FormMenuProductos
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(89, Byte), Integer), CType(CType(120, Byte), Integer), CType(CType(148, Byte), Integer))
+        Me.BackColor = System.Drawing.Color.Gainsboro
         Me.ClientSize = New System.Drawing.Size(640, 460)
+        Me.Controls.Add(Me.PanelContenedor)
+        Me.Controls.Add(Me.Panel2)
         Me.Controls.Add(Me.PanelSuperior)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "FormMenuProductos"
@@ -219,6 +380,10 @@ Partial Class FormMenuProductos
         Me.PanelInfo1.PerformLayout()
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
+        Me.Panel2.ResumeLayout(False)
+        Me.PanelContenedor.ResumeLayout(False)
+        Me.PanelContenedor.PerformLayout()
+        CType(Me.dgvListadoProductos, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -237,4 +402,17 @@ Partial Class FormMenuProductos
     Friend WithEvents Label4 As Label
     Friend WithEvents Panel1 As Panel
     Friend WithEvents Label1 As Label
+    Friend WithEvents Panel2 As Panel
+    Friend WithEvents PanelContenedor As Panel
+    Friend WithEvents btnEliminarProducto As Button
+    Friend WithEvents btnActualizarProducto As Button
+    Friend WithEvents btnAgregarProducto As Button
+    Friend WithEvents Label7 As Label
+    Friend WithEvents dgvListadoProductos As DataGridView
+    Friend WithEvents Column1 As DataGridViewTextBoxColumn
+    Friend WithEvents Column2 As DataGridViewTextBoxColumn
+    Friend WithEvents Column3 As DataGridViewTextBoxColumn
+    Friend WithEvents Column4 As DataGridViewTextBoxColumn
+    Friend WithEvents btnActualizarListaPrecios As Button
+    Friend WithEvents btnInventario As Button
 End Class

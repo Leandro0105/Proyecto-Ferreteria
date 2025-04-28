@@ -1,5 +1,6 @@
 ﻿Imports CapaComun
 Imports System.Runtime.InteropServices
+Imports System.Drawing.Drawing2D
 Public Class FormMenuClientes
 
 #Region "Personalizacion del FormClientes"
@@ -31,7 +32,7 @@ Public Class FormMenuClientes
         CentrarLabelsInfo(PanelInfo1)
         CentrarLabelsInfo(PanelInfo2)
         CentrarLabelsInfo(PanelInfo3)
-
+        CentrarLabelDataGridView(PanelContenedor)
 
     End Sub
 
@@ -55,11 +56,42 @@ Public Class FormMenuClientes
         End If
     End Sub
 
+    Private Sub AjustarAnchoColumnas()
+        Dim anchoTotal As Integer = dgvListadoClientes.ClientSize.Width
+        dgvListadoClientes.Columns(0).Width = CInt(anchoTotal * 0.25)
+        dgvListadoClientes.Columns(1).Width = CInt(anchoTotal * 0.25)
+        dgvListadoClientes.Columns(2).Width = CInt(anchoTotal * 0.5)
+        dgvListadoClientes.Columns(0).HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleCenter
+        dgvListadoClientes.Columns(1).HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleCenter
+        dgvListadoClientes.Columns(2).HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleCenter
+    End Sub
+
     Private Sub AplicarBordesRedondeados()
-        Dim radio As Integer = 20
+        Dim radio As Integer = 35
         PanelInfo1.Region = Region.FromHrgn(CrearRoundRectRgn(0, 0, PanelInfo1.Width, PanelInfo1.Height, radio, radio))
         PanelInfo2.Region = Region.FromHrgn(CrearRoundRectRgn(0, 0, PanelInfo2.Width, PanelInfo2.Height, radio, radio))
         PanelInfo3.Region = Region.FromHrgn(CrearRoundRectRgn(0, 0, PanelInfo3.Width, PanelInfo3.Height, radio, radio))
+    End Sub
+
+    Private Sub RedondearBoton(ByVal btn As Button)
+        Dim radio As Integer = 35
+        Dim path As New GraphicsPath
+        path.StartFigure()
+        path.AddArc(New Rectangle(0, 0, radio, radio), 180, 90)
+        path.AddArc(New Rectangle(btn.Width - radio, 0, radio, radio), 270, 90)
+        path.AddArc(New Rectangle(btn.Width - radio, btn.Height - radio, radio, radio), 0, 90)
+        path.AddArc(New Rectangle(0, btn.Height - radio, radio, radio), 90, 90)
+        path.CloseFigure()
+        btn.Region = New Region(path)
+    End Sub
+
+    Private Sub CentrarLabelDataGridView(pnl As Panel)
+        If pnl.Controls.Count > 0 Then
+            Dim lbl As Label = TryCast(pnl.Controls(0), Label)
+            If lbl IsNot Nothing Then
+                lbl.Left = (pnl.Width - lbl.Width) / 2
+            End If
+        End If
     End Sub
 
 #End Region
@@ -77,9 +109,14 @@ Public Class FormMenuClientes
     Private Sub FormMenuClientes_Resize(sender As Object, e As EventArgs) Handles MyBase.Resize
         AjustarPaneles()
         AplicarBordesRedondeados()
+        AjustarAnchoColumnas()
     End Sub
 
     Private Sub FormMenuClientes_Load(sender As Object, e As EventArgs) Handles Me.Load
-
+        RedondearBoton(btnAgregarCliente)
+        RedondearBoton(btnModificarCliente)
+        RedondearBoton(btnEliminarCliente)
     End Sub
+
+
 End Class

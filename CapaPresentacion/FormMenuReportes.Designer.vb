@@ -36,6 +36,13 @@ Partial Class FormMenuReportes
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.PanelContenedor = New System.Windows.Forms.Panel()
+        Me.btnNuevoReporte = New System.Windows.Forms.Button()
+        Me.btnListadoProductos = New System.Windows.Forms.Button()
+        Me.btnListaPreciosClientes = New System.Windows.Forms.Button()
+        Me.btnProdEnProm = New System.Windows.Forms.Button()
+        Me.btnMovimientos = New System.Windows.Forms.Button()
         Me.PanelSuperior.SuspendLayout()
         Me.PanelInfo2.SuspendLayout()
         Me.Panel4.SuspendLayout()
@@ -44,6 +51,7 @@ Partial Class FormMenuReportes
         Me.Panel3.SuspendLayout()
         Me.PanelInfo1.SuspendLayout()
         Me.Panel1.SuspendLayout()
+        Me.Panel2.SuspendLayout()
         Me.SuspendLayout()
         '
         'PanelSuperior
@@ -104,7 +112,7 @@ Partial Class FormMenuReportes
         Me.IconoHome.ActiveColor = System.Drawing.Color.Black
         Me.IconoHome.BackColor = System.Drawing.Color.Transparent
         Me.IconoHome.IconChar = FontAwesome.Sharp.IconChar.Home
-        Me.IconoHome.InActiveColor = System.Drawing.Color.White
+        Me.IconoHome.InActiveColor = System.Drawing.Color.FromArgb(CType(CType(38, Byte), Integer), CType(CType(46, Byte), Integer), CType(CType(94, Byte), Integer))
         Me.IconoHome.Location = New System.Drawing.Point(5, 5)
         Me.IconoHome.Name = "IconoHome"
         Me.IconoHome.Size = New System.Drawing.Size(46, 40)
@@ -195,12 +203,105 @@ Partial Class FormMenuReportes
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "Reportes Totales"
         '
+        'Panel2
+        '
+        Me.Panel2.Controls.Add(Me.btnMovimientos)
+        Me.Panel2.Controls.Add(Me.btnProdEnProm)
+        Me.Panel2.Controls.Add(Me.btnListaPreciosClientes)
+        Me.Panel2.Controls.Add(Me.btnListadoProductos)
+        Me.Panel2.Controls.Add(Me.btnNuevoReporte)
+        Me.Panel2.Dock = System.Windows.Forms.DockStyle.Left
+        Me.Panel2.Location = New System.Drawing.Point(0, 190)
+        Me.Panel2.Name = "Panel2"
+        Me.Panel2.Size = New System.Drawing.Size(221, 270)
+        Me.Panel2.TabIndex = 3
+        '
+        'PanelContenedor
+        '
+        Me.PanelContenedor.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.PanelContenedor.Location = New System.Drawing.Point(221, 190)
+        Me.PanelContenedor.Name = "PanelContenedor"
+        Me.PanelContenedor.Size = New System.Drawing.Size(419, 270)
+        Me.PanelContenedor.TabIndex = 4
+        '
+        'btnNuevoReporte
+        '
+        Me.btnNuevoReporte.BackColor = System.Drawing.Color.FromArgb(CType(CType(89, Byte), Integer), CType(CType(120, Byte), Integer), CType(CType(148, Byte), Integer))
+        Me.btnNuevoReporte.FlatAppearance.BorderSize = 0
+        Me.btnNuevoReporte.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnNuevoReporte.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnNuevoReporte.ForeColor = System.Drawing.Color.White
+        Me.btnNuevoReporte.Location = New System.Drawing.Point(24, 24)
+        Me.btnNuevoReporte.Name = "btnNuevoReporte"
+        Me.btnNuevoReporte.Size = New System.Drawing.Size(179, 36)
+        Me.btnNuevoReporte.TabIndex = 2
+        Me.btnNuevoReporte.Text = "Nuevo Reporte"
+        Me.btnNuevoReporte.UseVisualStyleBackColor = False
+        '
+        'btnListadoProductos
+        '
+        Me.btnListadoProductos.BackColor = System.Drawing.Color.FromArgb(CType(CType(89, Byte), Integer), CType(CType(120, Byte), Integer), CType(CType(148, Byte), Integer))
+        Me.btnListadoProductos.FlatAppearance.BorderSize = 0
+        Me.btnListadoProductos.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnListadoProductos.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnListadoProductos.ForeColor = System.Drawing.Color.White
+        Me.btnListadoProductos.Location = New System.Drawing.Point(24, 66)
+        Me.btnListadoProductos.Name = "btnListadoProductos"
+        Me.btnListadoProductos.Size = New System.Drawing.Size(179, 36)
+        Me.btnListadoProductos.TabIndex = 3
+        Me.btnListadoProductos.Text = "Listado de Productos"
+        Me.btnListadoProductos.UseVisualStyleBackColor = False
+        '
+        'btnListaPreciosClientes
+        '
+        Me.btnListaPreciosClientes.BackColor = System.Drawing.Color.FromArgb(CType(CType(89, Byte), Integer), CType(CType(120, Byte), Integer), CType(CType(148, Byte), Integer))
+        Me.btnListaPreciosClientes.FlatAppearance.BorderSize = 0
+        Me.btnListaPreciosClientes.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnListaPreciosClientes.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnListaPreciosClientes.ForeColor = System.Drawing.Color.White
+        Me.btnListaPreciosClientes.Location = New System.Drawing.Point(24, 108)
+        Me.btnListaPreciosClientes.Name = "btnListaPreciosClientes"
+        Me.btnListaPreciosClientes.Size = New System.Drawing.Size(179, 36)
+        Me.btnListaPreciosClientes.TabIndex = 4
+        Me.btnListaPreciosClientes.Text = "Lista de Precios"
+        Me.btnListaPreciosClientes.UseVisualStyleBackColor = False
+        '
+        'btnProdEnProm
+        '
+        Me.btnProdEnProm.BackColor = System.Drawing.Color.FromArgb(CType(CType(89, Byte), Integer), CType(CType(120, Byte), Integer), CType(CType(148, Byte), Integer))
+        Me.btnProdEnProm.FlatAppearance.BorderSize = 0
+        Me.btnProdEnProm.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnProdEnProm.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnProdEnProm.ForeColor = System.Drawing.Color.White
+        Me.btnProdEnProm.Location = New System.Drawing.Point(24, 150)
+        Me.btnProdEnProm.Name = "btnProdEnProm"
+        Me.btnProdEnProm.Size = New System.Drawing.Size(179, 36)
+        Me.btnProdEnProm.TabIndex = 5
+        Me.btnProdEnProm.Text = "Productos En Promoción"
+        Me.btnProdEnProm.UseVisualStyleBackColor = False
+        '
+        'btnMovimientos
+        '
+        Me.btnMovimientos.BackColor = System.Drawing.Color.FromArgb(CType(CType(89, Byte), Integer), CType(CType(120, Byte), Integer), CType(CType(148, Byte), Integer))
+        Me.btnMovimientos.FlatAppearance.BorderSize = 0
+        Me.btnMovimientos.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnMovimientos.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnMovimientos.ForeColor = System.Drawing.Color.White
+        Me.btnMovimientos.Location = New System.Drawing.Point(24, 192)
+        Me.btnMovimientos.Name = "btnMovimientos"
+        Me.btnMovimientos.Size = New System.Drawing.Size(179, 42)
+        Me.btnMovimientos.TabIndex = 6
+        Me.btnMovimientos.Text = "Movimientos de Productos"
+        Me.btnMovimientos.UseVisualStyleBackColor = False
+        '
         'FormMenuReportes
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(89, Byte), Integer), CType(CType(120, Byte), Integer), CType(CType(148, Byte), Integer))
+        Me.BackColor = System.Drawing.Color.Gainsboro
         Me.ClientSize = New System.Drawing.Size(640, 460)
+        Me.Controls.Add(Me.PanelContenedor)
+        Me.Controls.Add(Me.Panel2)
         Me.Controls.Add(Me.PanelSuperior)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "FormMenuReportes"
@@ -219,6 +320,7 @@ Partial Class FormMenuReportes
         Me.PanelInfo1.PerformLayout()
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
+        Me.Panel2.ResumeLayout(False)
         Me.ResumeLayout(False)
 
     End Sub
@@ -237,4 +339,11 @@ Partial Class FormMenuReportes
     Friend WithEvents Label4 As Label
     Friend WithEvents Panel1 As Panel
     Friend WithEvents Label1 As Label
+    Friend WithEvents Panel2 As Panel
+    Friend WithEvents PanelContenedor As Panel
+    Friend WithEvents btnMovimientos As Button
+    Friend WithEvents btnProdEnProm As Button
+    Friend WithEvents btnListaPreciosClientes As Button
+    Friend WithEvents btnListadoProductos As Button
+    Friend WithEvents btnNuevoReporte As Button
 End Class

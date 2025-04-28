@@ -22,7 +22,6 @@ Partial Class FormMenuUsuario
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FormMenuUsuario))
         Me.PanelSuperior = New System.Windows.Forms.Panel()
         Me.PanelInfo2 = New System.Windows.Forms.Panel()
         Me.Label2 = New System.Windows.Forms.Label()
@@ -37,8 +36,15 @@ Partial Class FormMenuUsuario
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.btnAgregar = New FontAwesome.Sharp.IconButton()
-        Me.IconButton1 = New FontAwesome.Sharp.IconButton()
+        Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.btnEliminarUsuario = New System.Windows.Forms.Button()
+        Me.btnModificarUsuario = New System.Windows.Forms.Button()
+        Me.btnAgregarUsuario = New System.Windows.Forms.Button()
+        Me.PanelContenedor = New System.Windows.Forms.Panel()
+        Me.Label7 = New System.Windows.Forms.Label()
+        Me.dgvListadoUsuarios = New System.Windows.Forms.DataGridView()
+        Me.Column1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.PanelSuperior.SuspendLayout()
         Me.PanelInfo2.SuspendLayout()
         Me.Panel4.SuspendLayout()
@@ -47,6 +53,9 @@ Partial Class FormMenuUsuario
         Me.Panel3.SuspendLayout()
         Me.PanelInfo1.SuspendLayout()
         Me.Panel1.SuspendLayout()
+        Me.Panel2.SuspendLayout()
+        Me.PanelContenedor.SuspendLayout()
+        CType(Me.dgvListadoUsuarios, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'PanelSuperior
@@ -107,7 +116,7 @@ Partial Class FormMenuUsuario
         Me.IconoHome.ActiveColor = System.Drawing.Color.Black
         Me.IconoHome.BackColor = System.Drawing.Color.Transparent
         Me.IconoHome.IconChar = FontAwesome.Sharp.IconChar.Home
-        Me.IconoHome.InActiveColor = System.Drawing.Color.White
+        Me.IconoHome.InActiveColor = System.Drawing.Color.FromArgb(CType(CType(38, Byte), Integer), CType(CType(46, Byte), Integer), CType(CType(94, Byte), Integer))
         Me.IconoHome.Location = New System.Drawing.Point(5, 5)
         Me.IconoHome.Name = "IconoHome"
         Me.IconoHome.Size = New System.Drawing.Size(46, 40)
@@ -198,52 +207,115 @@ Partial Class FormMenuUsuario
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "Total de Usuarios"
         '
-        'btnAgregar
+        'Panel2
         '
-        Me.btnAgregar.FlatAppearance.BorderSize = 2
-        Me.btnAgregar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.btnAgregar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnAgregar.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnAgregar.ForeColor = System.Drawing.Color.White
-        Me.btnAgregar.Icon = FontAwesome.Sharp.IconChar.Plus
-        Me.btnAgregar.IconColor = System.Drawing.Color.White
-        Me.btnAgregar.IconSize = 16
-        Me.btnAgregar.Image = CType(resources.GetObject("btnAgregar.Image"), System.Drawing.Image)
-        Me.btnAgregar.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.btnAgregar.Location = New System.Drawing.Point(41, 219)
-        Me.btnAgregar.Name = "btnAgregar"
-        Me.btnAgregar.Size = New System.Drawing.Size(101, 38)
-        Me.btnAgregar.TabIndex = 1
-        Me.btnAgregar.Text = "Agregar "
-        Me.btnAgregar.UseVisualStyleBackColor = True
+        Me.Panel2.Controls.Add(Me.btnEliminarUsuario)
+        Me.Panel2.Controls.Add(Me.btnModificarUsuario)
+        Me.Panel2.Controls.Add(Me.btnAgregarUsuario)
+        Me.Panel2.Dock = System.Windows.Forms.DockStyle.Left
+        Me.Panel2.Location = New System.Drawing.Point(0, 190)
+        Me.Panel2.Name = "Panel2"
+        Me.Panel2.Size = New System.Drawing.Size(240, 270)
+        Me.Panel2.TabIndex = 1
         '
-        'IconButton1
+        'btnEliminarUsuario
         '
-        Me.IconButton1.FlatAppearance.BorderSize = 2
-        Me.IconButton1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.IconButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.IconButton1.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.IconButton1.ForeColor = System.Drawing.Color.White
-        Me.IconButton1.Icon = FontAwesome.Sharp.IconChar.Plus
-        Me.IconButton1.IconColor = System.Drawing.Color.White
-        Me.IconButton1.IconSize = 16
-        Me.IconButton1.Image = CType(resources.GetObject("IconButton1.Image"), System.Drawing.Image)
-        Me.IconButton1.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.IconButton1.Location = New System.Drawing.Point(41, 273)
-        Me.IconButton1.Name = "IconButton1"
-        Me.IconButton1.Size = New System.Drawing.Size(126, 38)
-        Me.IconButton1.TabIndex = 2
-        Me.IconButton1.Text = "Modificar"
-        Me.IconButton1.UseVisualStyleBackColor = True
+        Me.btnEliminarUsuario.BackColor = System.Drawing.Color.FromArgb(CType(CType(89, Byte), Integer), CType(CType(120, Byte), Integer), CType(CType(148, Byte), Integer))
+        Me.btnEliminarUsuario.FlatAppearance.BorderSize = 0
+        Me.btnEliminarUsuario.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnEliminarUsuario.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnEliminarUsuario.ForeColor = System.Drawing.Color.White
+        Me.btnEliminarUsuario.Location = New System.Drawing.Point(41, 177)
+        Me.btnEliminarUsuario.Name = "btnEliminarUsuario"
+        Me.btnEliminarUsuario.Size = New System.Drawing.Size(150, 36)
+        Me.btnEliminarUsuario.TabIndex = 2
+        Me.btnEliminarUsuario.Text = "Eliminar"
+        Me.btnEliminarUsuario.UseVisualStyleBackColor = False
+        '
+        'btnModificarUsuario
+        '
+        Me.btnModificarUsuario.BackColor = System.Drawing.Color.FromArgb(CType(CType(89, Byte), Integer), CType(CType(120, Byte), Integer), CType(CType(148, Byte), Integer))
+        Me.btnModificarUsuario.FlatAppearance.BorderSize = 0
+        Me.btnModificarUsuario.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnModificarUsuario.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnModificarUsuario.ForeColor = System.Drawing.Color.White
+        Me.btnModificarUsuario.Location = New System.Drawing.Point(41, 116)
+        Me.btnModificarUsuario.Name = "btnModificarUsuario"
+        Me.btnModificarUsuario.Size = New System.Drawing.Size(150, 36)
+        Me.btnModificarUsuario.TabIndex = 1
+        Me.btnModificarUsuario.Text = "Modificar"
+        Me.btnModificarUsuario.UseVisualStyleBackColor = False
+        '
+        'btnAgregarUsuario
+        '
+        Me.btnAgregarUsuario.BackColor = System.Drawing.Color.FromArgb(CType(CType(89, Byte), Integer), CType(CType(120, Byte), Integer), CType(CType(148, Byte), Integer))
+        Me.btnAgregarUsuario.FlatAppearance.BorderSize = 0
+        Me.btnAgregarUsuario.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnAgregarUsuario.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnAgregarUsuario.ForeColor = System.Drawing.Color.White
+        Me.btnAgregarUsuario.Location = New System.Drawing.Point(41, 59)
+        Me.btnAgregarUsuario.Name = "btnAgregarUsuario"
+        Me.btnAgregarUsuario.Size = New System.Drawing.Size(150, 36)
+        Me.btnAgregarUsuario.TabIndex = 0
+        Me.btnAgregarUsuario.Text = "Agegar"
+        Me.btnAgregarUsuario.UseVisualStyleBackColor = False
+        '
+        'PanelContenedor
+        '
+        Me.PanelContenedor.Controls.Add(Me.Label7)
+        Me.PanelContenedor.Controls.Add(Me.dgvListadoUsuarios)
+        Me.PanelContenedor.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.PanelContenedor.Location = New System.Drawing.Point(240, 190)
+        Me.PanelContenedor.Name = "PanelContenedor"
+        Me.PanelContenedor.Size = New System.Drawing.Size(400, 270)
+        Me.PanelContenedor.TabIndex = 2
+        '
+        'Label7
+        '
+        Me.Label7.AutoSize = True
+        Me.Label7.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label7.Location = New System.Drawing.Point(122, 18)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(153, 19)
+        Me.Label7.TabIndex = 1
+        Me.Label7.Text = "Listado de Usuarios"
+        '
+        'dgvListadoUsuarios
+        '
+        Me.dgvListadoUsuarios.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.dgvListadoUsuarios.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.dgvListadoUsuarios.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Column1, Me.Column2})
+        Me.dgvListadoUsuarios.Location = New System.Drawing.Point(26, 47)
+        Me.dgvListadoUsuarios.Name = "dgvListadoUsuarios"
+        Me.dgvListadoUsuarios.RowHeadersVisible = False
+        Me.dgvListadoUsuarios.Size = New System.Drawing.Size(352, 191)
+        Me.dgvListadoUsuarios.TabIndex = 0
+        '
+        'Column1
+        '
+        Me.Column1.Frozen = True
+        Me.Column1.HeaderText = "Apellidos"
+        Me.Column1.Name = "Column1"
+        Me.Column1.ReadOnly = True
+        Me.Column1.Width = 175
+        '
+        'Column2
+        '
+        Me.Column2.Frozen = True
+        Me.Column2.HeaderText = "Nombres"
+        Me.Column2.Name = "Column2"
+        Me.Column2.ReadOnly = True
+        Me.Column2.Width = 176
         '
         'FormMenuUsuario
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(89, Byte), Integer), CType(CType(120, Byte), Integer), CType(CType(148, Byte), Integer))
+        Me.BackColor = System.Drawing.Color.Gainsboro
         Me.ClientSize = New System.Drawing.Size(640, 460)
-        Me.Controls.Add(Me.IconButton1)
-        Me.Controls.Add(Me.btnAgregar)
+        Me.Controls.Add(Me.PanelContenedor)
+        Me.Controls.Add(Me.Panel2)
         Me.Controls.Add(Me.PanelSuperior)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "FormMenuUsuario"
@@ -262,6 +334,10 @@ Partial Class FormMenuUsuario
         Me.PanelInfo1.PerformLayout()
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
+        Me.Panel2.ResumeLayout(False)
+        Me.PanelContenedor.ResumeLayout(False)
+        Me.PanelContenedor.PerformLayout()
+        CType(Me.dgvListadoUsuarios, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -280,6 +356,13 @@ Partial Class FormMenuUsuario
     Friend WithEvents Label2 As Label
     Friend WithEvents Panel4 As Panel
     Friend WithEvents Label5 As Label
-    Friend WithEvents btnAgregar As FontAwesome.Sharp.IconButton
-    Friend WithEvents IconButton1 As FontAwesome.Sharp.IconButton
+    Friend WithEvents Panel2 As Panel
+    Friend WithEvents btnEliminarUsuario As Button
+    Friend WithEvents btnModificarUsuario As Button
+    Friend WithEvents btnAgregarUsuario As Button
+    Friend WithEvents PanelContenedor As Panel
+    Friend WithEvents Label7 As Label
+    Friend WithEvents dgvListadoUsuarios As DataGridView
+    Friend WithEvents Column1 As DataGridViewTextBoxColumn
+    Friend WithEvents Column2 As DataGridViewTextBoxColumn
 End Class
