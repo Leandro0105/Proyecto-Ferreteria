@@ -60,3 +60,36 @@ C:\Users\Asus3\OneDrive\Escritorio\Proyecto Para Sistema de Ferreteria\CapaPrese
 C:\Users\Asus3\OneDrive\Escritorio\Proyecto Para Sistema de Ferreteria\CapaPresentacion\obj\Debug\CapaPresentacion.exe
 C:\Users\Asus3\OneDrive\Escritorio\Proyecto Para Sistema de Ferreteria\CapaPresentacion\obj\Debug\CapaPresentacion.xml
 C:\Users\Asus3\OneDrive\Escritorio\Proyecto Para Sistema de Ferreteria\CapaPresentacion\obj\Debug\CapaPresentacion.pdb
+E:\Desktop\Proyecto-Ferreteria-2025\CapaPresentacion\bin\Debug\CapaPresentacion.exe.config
+E:\Desktop\Proyecto-Ferreteria-2025\CapaPresentacion\bin\Debug\CapaPresentacion.exe
+E:\Desktop\Proyecto-Ferreteria-2025\CapaPresentacion\bin\Debug\CapaPresentacion.pdb
+E:\Desktop\Proyecto-Ferreteria-2025\CapaPresentacion\bin\Debug\CapaPresentacion.xml
+E:\Desktop\Proyecto-Ferreteria-2025\CapaPresentacion\bin\Debug\CapaComun.dll
+E:\Desktop\Proyecto-Ferreteria-2025\CapaPresentacion\bin\Debug\CapaNegocio.dll
+E:\Desktop\Proyecto-Ferreteria-2025\CapaPresentacion\bin\Debug\FontAwesome.Sharp.dll
+E:\Desktop\Proyecto-Ferreteria-2025\CapaPresentacion\bin\Debug\CapaDatos.dll
+E:\Desktop\Proyecto-Ferreteria-2025\CapaPresentacion\bin\Debug\CapaComun.pdb
+E:\Desktop\Proyecto-Ferreteria-2025\CapaPresentacion\bin\Debug\CapaComun.xml
+E:\Desktop\Proyecto-Ferreteria-2025\CapaPresentacion\bin\Debug\CapaNegocio.pdb
+E:\Desktop\Proyecto-Ferreteria-2025\CapaPresentacion\bin\Debug\CapaNegocio.xml
+E:\Desktop\Proyecto-Ferreteria-2025\CapaPresentacion\bin\Debug\CapaDatos.pdb
+E:\Desktop\Proyecto-Ferreteria-2025\CapaPresentacion\bin\Debug\CapaDatos.xml
+E:\Desktop\Proyecto-Ferreteria-2025\CapaPresentacion\obj\Debug\CapaPresentacion.vbproj.AssemblyReference.cache
+E:\Desktop\Proyecto-Ferreteria-2025\CapaPresentacion\obj\Debug\CapaPresentacion.FormAltaUsuarios.resources
+E:\Desktop\Proyecto-Ferreteria-2025\CapaPresentacion\obj\Debug\CapaPresentacion.FormInicioSesion.resources
+E:\Desktop\Proyecto-Ferreteria-2025\CapaPresentacion\obj\Debug\CapaPresentacion.FormMenuClientes.resources
+E:\Desktop\Proyecto-Ferreteria-2025\CapaPresentacion\obj\Debug\CapaPresentacion.FormMenuCompras.resources
+E:\Desktop\Proyecto-Ferreteria-2025\CapaPresentacion\obj\Debug\CapaPresentacion.FormMenuPrincipal.resources
+E:\Desktop\Proyecto-Ferreteria-2025\CapaPresentacion\obj\Debug\CapaPresentacion.FormMenuProductos.resources
+E:\Desktop\Proyecto-Ferreteria-2025\CapaPresentacion\obj\Debug\CapaPresentacion.FormMenuProveedores.resources
+E:\Desktop\Proyecto-Ferreteria-2025\CapaPresentacion\obj\Debug\CapaPresentacion.FormMenuReportes.resources
+E:\Desktop\Proyecto-Ferreteria-2025\CapaPresentacion\obj\Debug\CapaPresentacion.FormMenuUsuario.resources
+E:\Desktop\Proyecto-Ferreteria-2025\CapaPresentacion\obj\Debug\CapaPresentacion.FormMenuVentas.resources
+E:\Desktop\Proyecto-Ferreteria-2025\CapaPresentacion\obj\Debug\CapaPresentacion.Resources.resources
+E:\Desktop\Proyecto-Ferreteria-2025\CapaPresentacion\obj\Debug\CapaPresentacion.vbproj.GenerateResource.cache
+E:\Desktop\Proyecto-Ferreteria-2025\CapaPresentacion\obj\Debug\CapaPresentacion.vbproj.CoreCompileInputs.cache
+E:\Desktop\Proyecto-Ferreteria-2025\CapaPresentacion\obj\Debug\CapaPresentacion.vbproj.CopyComplete
+E:\Desktop\Proyecto-Ferreteria-2025\CapaPresentacion\obj\Debug\CapaPresentacion.exe
+E:\Desktop\Proyecto-Ferreteria-2025\CapaPresentacion\obj\Debug\CapaPresentacion.xml
+E:\Desktop\Proyecto-Ferreteria-2025\CapaPresentacion\obj\Debug\CapaPresentacion.pdb
+E:\Desktop\Proyecto-Ferreteria-2025\CapaPresentacion\obj\Debug\CapaPresentacion.FormCambiarPassword.resources

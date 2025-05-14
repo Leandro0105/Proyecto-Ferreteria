@@ -118,5 +118,7 @@ Public Class FormMenuClientes
         RedondearBoton(btnEliminarCliente)
     End Sub
 
+    Private Sub btnAgregarCliente_Click(sender As Object, e As EventArgs) Handles btnAgregarCliente.Click
 
+    End Sub
 End Class

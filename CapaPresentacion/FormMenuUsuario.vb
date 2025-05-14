@@ -113,5 +113,7 @@ Public Class FormMenuUsuario
         RedondearBoton(btnEliminarUsuario)
     End Sub
 
-
+    Private Sub btnAgregarUsuario_Click(sender As Object, e As EventArgs) Handles btnAgregarUsuario.Click
+        FormAltaUsuarios.ShowDialog()
+    End Sub
 End Class

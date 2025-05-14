@@ -18,3 +18,13 @@ C:\Users\Asus3\OneDrive\Escritorio\Proyecto Para Sistema de Ferreteria\CapaComun
 C:\Users\Asus3\OneDrive\Escritorio\Proyecto Para Sistema de Ferreteria\CapaComun\obj\Debug\CapaComun.dll
 C:\Users\Asus3\OneDrive\Escritorio\Proyecto Para Sistema de Ferreteria\CapaComun\obj\Debug\CapaComun.xml
 C:\Users\Asus3\OneDrive\Escritorio\Proyecto Para Sistema de Ferreteria\CapaComun\obj\Debug\CapaComun.pdb
+E:\Desktop\Proyecto-Ferreteria-2025\CapaComun\bin\Debug\CapaComun.dll
+E:\Desktop\Proyecto-Ferreteria-2025\CapaComun\bin\Debug\CapaComun.pdb
+E:\Desktop\Proyecto-Ferreteria-2025\CapaComun\bin\Debug\CapaComun.xml
+E:\Desktop\Proyecto-Ferreteria-2025\CapaComun\obj\Debug\CapaComun.vbproj.AssemblyReference.cache
+E:\Desktop\Proyecto-Ferreteria-2025\CapaComun\obj\Debug\CapaComun.Resources.resources
+E:\Desktop\Proyecto-Ferreteria-2025\CapaComun\obj\Debug\CapaComun.vbproj.GenerateResource.cache
+E:\Desktop\Proyecto-Ferreteria-2025\CapaComun\obj\Debug\CapaComun.vbproj.CoreCompileInputs.cache
+E:\Desktop\Proyecto-Ferreteria-2025\CapaComun\obj\Debug\CapaComun.dll
+E:\Desktop\Proyecto-Ferreteria-2025\CapaComun\obj\Debug\CapaComun.xml
+E:\Desktop\Proyecto-Ferreteria-2025\CapaComun\obj\Debug\CapaComun.pdb

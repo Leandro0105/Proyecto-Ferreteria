@@ -26,3 +26,17 @@ C:\Users\Asus3\OneDrive\Escritorio\Proyecto Para Sistema de Ferreteria\CapaDatos
 C:\Users\Asus3\OneDrive\Escritorio\Proyecto Para Sistema de Ferreteria\CapaDatos\obj\Debug\CapaDatos.dll
 C:\Users\Asus3\OneDrive\Escritorio\Proyecto Para Sistema de Ferreteria\CapaDatos\obj\Debug\CapaDatos.xml
 C:\Users\Asus3\OneDrive\Escritorio\Proyecto Para Sistema de Ferreteria\CapaDatos\obj\Debug\CapaDatos.pdb
+E:\Desktop\Proyecto-Ferreteria-2025\CapaDatos\bin\Debug\CapaDatos.dll
+E:\Desktop\Proyecto-Ferreteria-2025\CapaDatos\bin\Debug\CapaDatos.pdb
+E:\Desktop\Proyecto-Ferreteria-2025\CapaDatos\bin\Debug\CapaDatos.xml
+E:\Desktop\Proyecto-Ferreteria-2025\CapaDatos\bin\Debug\CapaComun.dll
+E:\Desktop\Proyecto-Ferreteria-2025\CapaDatos\bin\Debug\CapaComun.pdb
+E:\Desktop\Proyecto-Ferreteria-2025\CapaDatos\bin\Debug\CapaComun.xml
+E:\Desktop\Proyecto-Ferreteria-2025\CapaDatos\obj\Debug\CapaDatos.vbproj.AssemblyReference.cache
+E:\Desktop\Proyecto-Ferreteria-2025\CapaDatos\obj\Debug\CapaDatos.Resources.resources
+E:\Desktop\Proyecto-Ferreteria-2025\CapaDatos\obj\Debug\CapaDatos.vbproj.GenerateResource.cache
+E:\Desktop\Proyecto-Ferreteria-2025\CapaDatos\obj\Debug\CapaDatos.vbproj.CoreCompileInputs.cache
+E:\Desktop\Proyecto-Ferreteria-2025\CapaDatos\obj\Debug\CapaDatos.vbproj.CopyComplete
+E:\Desktop\Proyecto-Ferreteria-2025\CapaDatos\obj\Debug\CapaDatos.dll
+E:\Desktop\Proyecto-Ferreteria-2025\CapaDatos\obj\Debug\CapaDatos.xml
+E:\Desktop\Proyecto-Ferreteria-2025\CapaDatos\obj\Debug\CapaDatos.pdb

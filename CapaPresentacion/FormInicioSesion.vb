@@ -1,6 +1,7 @@
 ﻿Imports CapaNegocio
 Imports System.Runtime.InteropServices
 Imports System.Drawing.Drawing2D
+Imports CapaComun
 
 
 Public Class FormInicioSesion
@@ -22,12 +23,44 @@ Public Class FormInicioSesion
         Dim modeloUsuario As New ModeloUsuario
         Dim validarusario = modeloUsuario.ValidarUsario(txtUsuario.Text.Trim, txtPassword.Text.Trim)
         If validarusario = True Then
-            FormMenuPrincipal.Show()
-            txtUsuario.Clear()
-            txtPassword.Clear()
-            Me.Hide()
+            If UsuarioActivo.CambiarPassword = True Then
+                UsuarioActivo.UsuarioEnSesion = txtUsuario.Text.Trim
+                FormCambiarPassword.ShowDialog()
+            Else
+                UsuarioActivo.IntentosRestantes = Nothing
+                FormMenuPrincipal.Show()
+                txtUsuario.Clear()
+                txtPassword.Clear()
+                Me.Hide()
+            End If
+
+
+        ElseIf UsuarioActivo.EstadoUsuario = "BLOQUEADO" Then
+            MsgBox("El Usuario ingresado se encuentra Bloqueado por cuestiones de seguridad." + vbNewLine + "Comuniquese con el Administrador para volver a Activarlo", MsgBoxStyle.Information, "Usuario Bloqueado")
+            UsuarioEnSesion = False
+        ElseIf UsuarioActivo.EstadoUsuario = "INACTIVO" Then
+            MsgBox("El Usuario ingresado se encuentra Inactivo" + vbNewLine + "Verifiquesu Usuario en el Administrador y vuelva a intentarlo", MsgBoxStyle.Exclamation, "Usuario Inactivo")
+            UsuarioEnSesion = False
+        ElseIf UsuarioEnSesion = True Then
+            If UsuarioActivo.EstadoUsuario = "BLOQUEADO" Then
+                MsgBox("El Usuario ingresado se encuentra Bloqueado por cuestiones de seguridad." + vbNewLine + "Comuniquese con el Administrador para volver a Activarlo", MsgBoxStyle.Information, "Usuario Bloqueado")
+                UsuarioActivo.UsuarioEnSesion = False
+            ElseIf UsuarioActivo.EstadoUsuario = "INACTIVO" Then
+                MsgBox("El Usuario ingresado se encuentra Inactivo" + vbNewLine + "Verifiquesu Usuario en el Administrador y vuelva a intentarlo", MsgBoxStyle.Exclamation, "Usuario Inactivo")
+                UsuarioEnSesion = False
+            ElseIf MsgBox("Error en el inicio de sesion, verifique los datos ingresados o consulte con su administrador de base de datos!") Then
+                UsuarioActivo.IntentosRestantes = UsuarioActivo.IntentosRestantes + 1
+                If UsuarioActivo.IntentosRestantes = 3 Then
+                    modeloUsuario.BloquearUsuario(UsuarioActivo.IdUsuario)
+                    UsuarioEnSesion = False
+                End If
+
+            End If
+
+
         Else
-            MsgBox("Error en el inicio de sesion, verifique los datos ingresados o consulte con su administrador de base de datos!")
+                MsgBox("El Usuario Ingresado NO EXISTE. Veriquelo y Vuelva a Intentarlo", MsgBoxStyle.Critical, "Usuario Inexistente!")
+
         End If
     End Sub
 

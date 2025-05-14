@@ -32,3 +32,20 @@ C:\Users\Asus3\OneDrive\Escritorio\Proyecto Para Sistema de Ferreteria\CapaNegoc
 C:\Users\Asus3\OneDrive\Escritorio\Proyecto Para Sistema de Ferreteria\CapaNegocio\obj\Debug\CapaNegocio.dll
 C:\Users\Asus3\OneDrive\Escritorio\Proyecto Para Sistema de Ferreteria\CapaNegocio\obj\Debug\CapaNegocio.xml
 C:\Users\Asus3\OneDrive\Escritorio\Proyecto Para Sistema de Ferreteria\CapaNegocio\obj\Debug\CapaNegocio.pdb
+E:\Desktop\Proyecto-Ferreteria-2025\CapaNegocio\bin\Debug\CapaNegocio.dll
+E:\Desktop\Proyecto-Ferreteria-2025\CapaNegocio\bin\Debug\CapaNegocio.pdb
+E:\Desktop\Proyecto-Ferreteria-2025\CapaNegocio\bin\Debug\CapaNegocio.xml
+E:\Desktop\Proyecto-Ferreteria-2025\CapaNegocio\bin\Debug\CapaComun.dll
+E:\Desktop\Proyecto-Ferreteria-2025\CapaNegocio\bin\Debug\CapaDatos.dll
+E:\Desktop\Proyecto-Ferreteria-2025\CapaNegocio\bin\Debug\CapaComun.pdb
+E:\Desktop\Proyecto-Ferreteria-2025\CapaNegocio\bin\Debug\CapaComun.xml
+E:\Desktop\Proyecto-Ferreteria-2025\CapaNegocio\bin\Debug\CapaDatos.pdb
+E:\Desktop\Proyecto-Ferreteria-2025\CapaNegocio\bin\Debug\CapaDatos.xml
+E:\Desktop\Proyecto-Ferreteria-2025\CapaNegocio\obj\Debug\CapaNegocio.vbproj.AssemblyReference.cache
+E:\Desktop\Proyecto-Ferreteria-2025\CapaNegocio\obj\Debug\CapaNegocio.Resources.resources
+E:\Desktop\Proyecto-Ferreteria-2025\CapaNegocio\obj\Debug\CapaNegocio.vbproj.GenerateResource.cache
+E:\Desktop\Proyecto-Ferreteria-2025\CapaNegocio\obj\Debug\CapaNegocio.vbproj.CoreCompileInputs.cache
+E:\Desktop\Proyecto-Ferreteria-2025\CapaNegocio\obj\Debug\CapaNegocio.vbproj.CopyComplete
+E:\Desktop\Proyecto-Ferreteria-2025\CapaNegocio\obj\Debug\CapaNegocio.dll
+E:\Desktop\Proyecto-Ferreteria-2025\CapaNegocio\obj\Debug\CapaNegocio.xml
+E:\Desktop\Proyecto-Ferreteria-2025\CapaNegocio\obj\Debug\CapaNegocio.pdb
