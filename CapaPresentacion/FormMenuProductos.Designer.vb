@@ -22,18 +22,19 @@ Partial Class FormMenuProductos
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.PanelSuperior = New System.Windows.Forms.Panel()
         Me.PanelInfo2 = New System.Windows.Forms.Panel()
-        Me.Label2 = New System.Windows.Forms.Label()
+        Me.lblProductosInactivos = New System.Windows.Forms.Label()
         Me.Panel4 = New System.Windows.Forms.Panel()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.IconoHome = New FontAwesome.Sharp.IconPictureBox()
         Me.PanelInfo3 = New System.Windows.Forms.Panel()
-        Me.Label6 = New System.Windows.Forms.Label()
+        Me.lblProductoMasVendido = New System.Windows.Forms.Label()
         Me.Panel3 = New System.Windows.Forms.Panel()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.PanelInfo1 = New System.Windows.Forms.Panel()
-        Me.Label4 = New System.Windows.Forms.Label()
+        Me.lblTotalProductos = New System.Windows.Forms.Label()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Panel2 = New System.Windows.Forms.Panel()
@@ -77,23 +78,23 @@ Partial Class FormMenuProductos
         'PanelInfo2
         '
         Me.PanelInfo2.BackColor = System.Drawing.Color.FromArgb(CType(CType(38, Byte), Integer), CType(CType(46, Byte), Integer), CType(CType(94, Byte), Integer))
-        Me.PanelInfo2.Controls.Add(Me.Label2)
+        Me.PanelInfo2.Controls.Add(Me.lblProductosInactivos)
         Me.PanelInfo2.Controls.Add(Me.Panel4)
         Me.PanelInfo2.Location = New System.Drawing.Point(226, 55)
         Me.PanelInfo2.Name = "PanelInfo2"
         Me.PanelInfo2.Size = New System.Drawing.Size(162, 98)
         Me.PanelInfo2.TabIndex = 4
         '
-        'Label2
+        'lblProductosInactivos
         '
-        Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Century Gothic", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.ForeColor = System.Drawing.Color.White
-        Me.Label2.Location = New System.Drawing.Point(64, 41)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(30, 32)
-        Me.Label2.TabIndex = 1
-        Me.Label2.Text = "5"
+        Me.lblProductosInactivos.AutoSize = True
+        Me.lblProductosInactivos.Font = New System.Drawing.Font("Century Gothic", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblProductosInactivos.ForeColor = System.Drawing.Color.White
+        Me.lblProductosInactivos.Location = New System.Drawing.Point(64, 41)
+        Me.lblProductosInactivos.Name = "lblProductosInactivos"
+        Me.lblProductosInactivos.Size = New System.Drawing.Size(30, 32)
+        Me.lblProductosInactivos.TabIndex = 1
+        Me.lblProductosInactivos.Text = "5"
         '
         'Panel4
         '
@@ -111,9 +112,9 @@ Partial Class FormMenuProductos
         Me.Label5.ForeColor = System.Drawing.Color.White
         Me.Label5.Location = New System.Drawing.Point(48, 5)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(64, 19)
+        Me.Label5.Size = New System.Drawing.Size(77, 19)
         Me.Label5.TabIndex = 0
-        Me.Label5.Text = "Activos"
+        Me.Label5.Text = "Inactivos"
         '
         'IconoHome
         '
@@ -132,23 +133,23 @@ Partial Class FormMenuProductos
         '
         Me.PanelInfo3.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.PanelInfo3.BackColor = System.Drawing.Color.FromArgb(CType(CType(38, Byte), Integer), CType(CType(46, Byte), Integer), CType(CType(94, Byte), Integer))
-        Me.PanelInfo3.Controls.Add(Me.Label6)
+        Me.PanelInfo3.Controls.Add(Me.lblProductoMasVendido)
         Me.PanelInfo3.Controls.Add(Me.Panel3)
         Me.PanelInfo3.Location = New System.Drawing.Point(410, 54)
         Me.PanelInfo3.Name = "PanelInfo3"
         Me.PanelInfo3.Size = New System.Drawing.Size(205, 98)
         Me.PanelInfo3.TabIndex = 2
         '
-        'Label6
+        'lblProductoMasVendido
         '
-        Me.Label6.AutoSize = True
-        Me.Label6.Font = New System.Drawing.Font("Century Gothic", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.ForeColor = System.Drawing.Color.White
-        Me.Label6.Location = New System.Drawing.Point(17, 37)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(173, 46)
-        Me.Label6.TabIndex = 2
-        Me.Label6.Text = "CEMENTO X 50KG" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "   LOMA NEGRA"
+        Me.lblProductoMasVendido.AutoSize = True
+        Me.lblProductoMasVendido.Font = New System.Drawing.Font("Century Gothic", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblProductoMasVendido.ForeColor = System.Drawing.Color.White
+        Me.lblProductoMasVendido.Location = New System.Drawing.Point(17, 37)
+        Me.lblProductoMasVendido.Name = "lblProductoMasVendido"
+        Me.lblProductoMasVendido.Size = New System.Drawing.Size(173, 46)
+        Me.lblProductoMasVendido.TabIndex = 2
+        Me.lblProductoMasVendido.Text = "CEMENTO X 50KG" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "   LOMA NEGRA"
         '
         'Panel3
         '
@@ -173,23 +174,23 @@ Partial Class FormMenuProductos
         'PanelInfo1
         '
         Me.PanelInfo1.BackColor = System.Drawing.Color.FromArgb(CType(CType(38, Byte), Integer), CType(CType(46, Byte), Integer), CType(CType(94, Byte), Integer))
-        Me.PanelInfo1.Controls.Add(Me.Label4)
+        Me.PanelInfo1.Controls.Add(Me.lblTotalProductos)
         Me.PanelInfo1.Controls.Add(Me.Panel1)
         Me.PanelInfo1.Location = New System.Drawing.Point(26, 57)
         Me.PanelInfo1.Name = "PanelInfo1"
         Me.PanelInfo1.Size = New System.Drawing.Size(177, 98)
         Me.PanelInfo1.TabIndex = 0
         '
-        'Label4
+        'lblTotalProductos
         '
-        Me.Label4.AutoSize = True
-        Me.Label4.Font = New System.Drawing.Font("Century Gothic", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.ForeColor = System.Drawing.Color.White
-        Me.Label4.Location = New System.Drawing.Point(71, 41)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(30, 32)
-        Me.Label4.TabIndex = 1
-        Me.Label4.Text = "5"
+        Me.lblTotalProductos.AutoSize = True
+        Me.lblTotalProductos.Font = New System.Drawing.Font("Century Gothic", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblTotalProductos.ForeColor = System.Drawing.Color.White
+        Me.lblTotalProductos.Location = New System.Drawing.Point(71, 41)
+        Me.lblTotalProductos.Name = "lblTotalProductos"
+        Me.lblTotalProductos.Size = New System.Drawing.Size(30, 32)
+        Me.lblTotalProductos.TabIndex = 1
+        Me.lblTotalProductos.Text = "5"
         '
         'Panel1
         '
@@ -316,13 +317,23 @@ Partial Class FormMenuProductos
         '
         'dgvListadoProductos
         '
+        Me.dgvListadoProductos.AllowUserToAddRows = False
         Me.dgvListadoProductos.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        DataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(CType(CType(38, Byte), Integer), CType(CType(46, Byte), Integer), CType(CType(94, Byte), Integer))
+        DataGridViewCellStyle1.Font = New System.Drawing.Font("Century Gothic", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle1.ForeColor = System.Drawing.Color.White
+        DataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dgvListadoProductos.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle1
         Me.dgvListadoProductos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.dgvListadoProductos.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Column1, Me.Column2, Me.Column3, Me.Column4})
         Me.dgvListadoProductos.Location = New System.Drawing.Point(16, 54)
         Me.dgvListadoProductos.Name = "dgvListadoProductos"
         Me.dgvListadoProductos.RowHeadersVisible = False
+        Me.dgvListadoProductos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
         Me.dgvListadoProductos.Size = New System.Drawing.Size(384, 204)
         Me.dgvListadoProductos.TabIndex = 0
         '
@@ -390,16 +401,16 @@ Partial Class FormMenuProductos
 
     Friend WithEvents PanelSuperior As Panel
     Friend WithEvents PanelInfo2 As Panel
-    Friend WithEvents Label2 As Label
+    Friend WithEvents lblProductosInactivos As Label
     Friend WithEvents Panel4 As Panel
     Friend WithEvents Label5 As Label
     Friend WithEvents IconoHome As FontAwesome.Sharp.IconPictureBox
     Friend WithEvents PanelInfo3 As Panel
-    Friend WithEvents Label6 As Label
+    Friend WithEvents lblProductoMasVendido As Label
     Friend WithEvents Panel3 As Panel
     Friend WithEvents Label3 As Label
     Friend WithEvents PanelInfo1 As Panel
-    Friend WithEvents Label4 As Label
+    Friend WithEvents lblTotalProductos As Label
     Friend WithEvents Panel1 As Panel
     Friend WithEvents Label1 As Label
     Friend WithEvents Panel2 As Panel

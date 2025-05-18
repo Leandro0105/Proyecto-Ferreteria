@@ -22,18 +22,19 @@ Partial Class FormMenuUsuario
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.PanelSuperior = New System.Windows.Forms.Panel()
         Me.PanelInfo2 = New System.Windows.Forms.Panel()
-        Me.Label2 = New System.Windows.Forms.Label()
+        Me.lblUsuariosBloqueados = New System.Windows.Forms.Label()
         Me.Panel4 = New System.Windows.Forms.Panel()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.IconoHome = New FontAwesome.Sharp.IconPictureBox()
         Me.PanelInfo3 = New System.Windows.Forms.Panel()
-        Me.Label6 = New System.Windows.Forms.Label()
+        Me.lblUsuariosInactivos = New System.Windows.Forms.Label()
         Me.Panel3 = New System.Windows.Forms.Panel()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.PanelInfo1 = New System.Windows.Forms.Panel()
-        Me.Label4 = New System.Windows.Forms.Label()
+        Me.lblTotalUsuarios = New System.Windows.Forms.Label()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Panel2 = New System.Windows.Forms.Panel()
@@ -73,23 +74,23 @@ Partial Class FormMenuUsuario
         'PanelInfo2
         '
         Me.PanelInfo2.BackColor = System.Drawing.Color.FromArgb(CType(CType(38, Byte), Integer), CType(CType(46, Byte), Integer), CType(CType(94, Byte), Integer))
-        Me.PanelInfo2.Controls.Add(Me.Label2)
+        Me.PanelInfo2.Controls.Add(Me.lblUsuariosBloqueados)
         Me.PanelInfo2.Controls.Add(Me.Panel4)
         Me.PanelInfo2.Location = New System.Drawing.Point(239, 55)
         Me.PanelInfo2.Name = "PanelInfo2"
         Me.PanelInfo2.Size = New System.Drawing.Size(162, 98)
         Me.PanelInfo2.TabIndex = 4
         '
-        'Label2
+        'lblUsuariosBloqueados
         '
-        Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Century Gothic", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.ForeColor = System.Drawing.Color.White
-        Me.Label2.Location = New System.Drawing.Point(64, 41)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(30, 32)
-        Me.Label2.TabIndex = 1
-        Me.Label2.Text = "5"
+        Me.lblUsuariosBloqueados.AutoSize = True
+        Me.lblUsuariosBloqueados.Font = New System.Drawing.Font("Century Gothic", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblUsuariosBloqueados.ForeColor = System.Drawing.Color.White
+        Me.lblUsuariosBloqueados.Location = New System.Drawing.Point(64, 41)
+        Me.lblUsuariosBloqueados.Name = "lblUsuariosBloqueados"
+        Me.lblUsuariosBloqueados.Size = New System.Drawing.Size(30, 32)
+        Me.lblUsuariosBloqueados.TabIndex = 1
+        Me.lblUsuariosBloqueados.Text = "5"
         '
         'Panel4
         '
@@ -107,9 +108,9 @@ Partial Class FormMenuUsuario
         Me.Label5.ForeColor = System.Drawing.Color.White
         Me.Label5.Location = New System.Drawing.Point(48, 5)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(64, 19)
+        Me.Label5.Size = New System.Drawing.Size(101, 19)
         Me.Label5.TabIndex = 0
-        Me.Label5.Text = "Activos"
+        Me.Label5.Text = "Bloqueados"
         '
         'IconoHome
         '
@@ -128,23 +129,23 @@ Partial Class FormMenuUsuario
         '
         Me.PanelInfo3.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.PanelInfo3.BackColor = System.Drawing.Color.FromArgb(CType(CType(38, Byte), Integer), CType(CType(46, Byte), Integer), CType(CType(94, Byte), Integer))
-        Me.PanelInfo3.Controls.Add(Me.Label6)
+        Me.PanelInfo3.Controls.Add(Me.lblUsuariosInactivos)
         Me.PanelInfo3.Controls.Add(Me.Panel3)
         Me.PanelInfo3.Location = New System.Drawing.Point(438, 54)
         Me.PanelInfo3.Name = "PanelInfo3"
         Me.PanelInfo3.Size = New System.Drawing.Size(162, 98)
         Me.PanelInfo3.TabIndex = 2
         '
-        'Label6
+        'lblUsuariosInactivos
         '
-        Me.Label6.AutoSize = True
-        Me.Label6.Font = New System.Drawing.Font("Century Gothic", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.ForeColor = System.Drawing.Color.White
-        Me.Label6.Location = New System.Drawing.Point(72, 40)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(30, 32)
-        Me.Label6.TabIndex = 2
-        Me.Label6.Text = "5"
+        Me.lblUsuariosInactivos.AutoSize = True
+        Me.lblUsuariosInactivos.Font = New System.Drawing.Font("Century Gothic", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblUsuariosInactivos.ForeColor = System.Drawing.Color.White
+        Me.lblUsuariosInactivos.Location = New System.Drawing.Point(72, 40)
+        Me.lblUsuariosInactivos.Name = "lblUsuariosInactivos"
+        Me.lblUsuariosInactivos.Size = New System.Drawing.Size(30, 32)
+        Me.lblUsuariosInactivos.TabIndex = 2
+        Me.lblUsuariosInactivos.Text = "5"
         '
         'Panel3
         '
@@ -169,23 +170,23 @@ Partial Class FormMenuUsuario
         'PanelInfo1
         '
         Me.PanelInfo1.BackColor = System.Drawing.Color.FromArgb(CType(CType(38, Byte), Integer), CType(CType(46, Byte), Integer), CType(CType(94, Byte), Integer))
-        Me.PanelInfo1.Controls.Add(Me.Label4)
+        Me.PanelInfo1.Controls.Add(Me.lblTotalUsuarios)
         Me.PanelInfo1.Controls.Add(Me.Panel1)
         Me.PanelInfo1.Location = New System.Drawing.Point(41, 57)
         Me.PanelInfo1.Name = "PanelInfo1"
         Me.PanelInfo1.Size = New System.Drawing.Size(162, 98)
         Me.PanelInfo1.TabIndex = 0
         '
-        'Label4
+        'lblTotalUsuarios
         '
-        Me.Label4.AutoSize = True
-        Me.Label4.Font = New System.Drawing.Font("Century Gothic", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.ForeColor = System.Drawing.Color.White
-        Me.Label4.Location = New System.Drawing.Point(71, 41)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(30, 32)
-        Me.Label4.TabIndex = 1
-        Me.Label4.Text = "5"
+        Me.lblTotalUsuarios.AutoSize = True
+        Me.lblTotalUsuarios.Font = New System.Drawing.Font("Century Gothic", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblTotalUsuarios.ForeColor = System.Drawing.Color.White
+        Me.lblTotalUsuarios.Location = New System.Drawing.Point(71, 41)
+        Me.lblTotalUsuarios.Name = "lblTotalUsuarios"
+        Me.lblTotalUsuarios.Size = New System.Drawing.Size(30, 32)
+        Me.lblTotalUsuarios.TabIndex = 1
+        Me.lblTotalUsuarios.Text = "5"
         '
         'Panel1
         '
@@ -282,13 +283,25 @@ Partial Class FormMenuUsuario
         '
         'dgvListadoUsuarios
         '
+        Me.dgvListadoUsuarios.AllowUserToAddRows = False
         Me.dgvListadoUsuarios.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        DataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(CType(CType(38, Byte), Integer), CType(CType(46, Byte), Integer), CType(CType(94, Byte), Integer))
+        DataGridViewCellStyle1.Font = New System.Drawing.Font("Century Gothic", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle1.ForeColor = System.Drawing.Color.White
+        DataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dgvListadoUsuarios.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle1
         Me.dgvListadoUsuarios.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.dgvListadoUsuarios.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Column1, Me.Column2})
         Me.dgvListadoUsuarios.Location = New System.Drawing.Point(26, 47)
+        Me.dgvListadoUsuarios.MultiSelect = False
         Me.dgvListadoUsuarios.Name = "dgvListadoUsuarios"
+        Me.dgvListadoUsuarios.ReadOnly = True
         Me.dgvListadoUsuarios.RowHeadersVisible = False
+        Me.dgvListadoUsuarios.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
         Me.dgvListadoUsuarios.Size = New System.Drawing.Size(352, 191)
         Me.dgvListadoUsuarios.TabIndex = 0
         '
@@ -344,16 +357,16 @@ Partial Class FormMenuUsuario
 
     Friend WithEvents PanelSuperior As Panel
     Friend WithEvents PanelInfo3 As Panel
-    Friend WithEvents Label6 As Label
+    Friend WithEvents lblUsuariosInactivos As Label
     Friend WithEvents Panel3 As Panel
     Friend WithEvents Label3 As Label
     Friend WithEvents PanelInfo1 As Panel
-    Friend WithEvents Label4 As Label
+    Friend WithEvents lblTotalUsuarios As Label
     Friend WithEvents Panel1 As Panel
     Friend WithEvents Label1 As Label
     Friend WithEvents IconoHome As FontAwesome.Sharp.IconPictureBox
     Friend WithEvents PanelInfo2 As Panel
-    Friend WithEvents Label2 As Label
+    Friend WithEvents lblUsuariosBloqueados As Label
     Friend WithEvents Panel4 As Panel
     Friend WithEvents Label5 As Label
     Friend WithEvents Panel2 As Panel

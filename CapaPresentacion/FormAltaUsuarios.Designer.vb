@@ -44,9 +44,9 @@ Partial Class FormAltaUsuarios
         Me.lblCorreoValido = New System.Windows.Forms.Label()
         Me.btnAceptar = New System.Windows.Forms.Button()
         Me.btnCancelar = New System.Windows.Forms.Button()
+        Me.lblUsuarioValido = New System.Windows.Forms.Label()
         Me.btnCerrarr = New System.Windows.Forms.PictureBox()
         Me.btnMinimizar = New System.Windows.Forms.PictureBox()
-        Me.lblUsuarioValido = New System.Windows.Forms.Label()
         Me.PanelSuperior.SuspendLayout()
         CType(Me.btnCerrarr, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.btnMinimizar, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -166,7 +166,7 @@ Partial Class FormAltaUsuarios
         Me.Label8.AutoSize = True
         Me.Label8.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label8.ForeColor = System.Drawing.Color.Black
-        Me.Label8.Location = New System.Drawing.Point(14, 369)
+        Me.Label8.Location = New System.Drawing.Point(14, 372)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(69, 18)
         Me.Label8.TabIndex = 10
@@ -235,7 +235,7 @@ Partial Class FormAltaUsuarios
         '
         Me.cboPermiso.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cboPermiso.FormattingEnabled = True
-        Me.cboPermiso.Location = New System.Drawing.Point(91, 377)
+        Me.cboPermiso.Location = New System.Drawing.Point(91, 373)
         Me.cboPermiso.Name = "cboPermiso"
         Me.cboPermiso.Size = New System.Drawing.Size(203, 21)
         Me.cboPermiso.TabIndex = 18
@@ -271,6 +271,17 @@ Partial Class FormAltaUsuarios
         Me.btnCancelar.Text = "Cancelar"
         Me.btnCancelar.UseVisualStyleBackColor = True
         '
+        'lblUsuarioValido
+        '
+        Me.lblUsuarioValido.AutoSize = True
+        Me.lblUsuarioValido.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblUsuarioValido.ForeColor = System.Drawing.Color.Black
+        Me.lblUsuarioValido.Location = New System.Drawing.Point(14, 223)
+        Me.lblUsuarioValido.Name = "lblUsuarioValido"
+        Me.lblUsuarioValido.Size = New System.Drawing.Size(62, 16)
+        Me.lblUsuarioValido.TabIndex = 22
+        Me.lblUsuarioValido.Text = "Permiso:"
+        '
         'btnCerrarr
         '
         Me.btnCerrarr.Image = Global.CapaPresentacion.My.Resources.Resources.cerrar
@@ -290,17 +301,6 @@ Partial Class FormAltaUsuarios
         Me.btnMinimizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.btnMinimizar.TabIndex = 0
         Me.btnMinimizar.TabStop = False
-        '
-        'lblUsuarioValido
-        '
-        Me.lblUsuarioValido.AutoSize = True
-        Me.lblUsuarioValido.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblUsuarioValido.ForeColor = System.Drawing.Color.Black
-        Me.lblUsuarioValido.Location = New System.Drawing.Point(14, 223)
-        Me.lblUsuarioValido.Name = "lblUsuarioValido"
-        Me.lblUsuarioValido.Size = New System.Drawing.Size(62, 16)
-        Me.lblUsuarioValido.TabIndex = 22
-        Me.lblUsuarioValido.Text = "Permiso:"
         '
         'FormAltaUsuarios
         '

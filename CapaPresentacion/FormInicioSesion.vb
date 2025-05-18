@@ -5,6 +5,9 @@ Imports CapaComun
 
 
 Public Class FormInicioSesion
+
+
+#Region "Funcionalidad del Form"
     <DllImport("user32.dll", EntryPoint:="ReleaseCapture")>
     Private Shared Sub ReleaseCapture()
     End Sub
@@ -18,10 +21,42 @@ Public Class FormInicioSesion
     Private Sub btnCerrar_Click(sender As Object, e As EventArgs) Handles btnCerrar.Click
         Application.Exit()
     End Sub
+#End Region
 
+#Region "Seccion Eventos de los Elementos del Form"
     Private Sub btnIniciarSesion_Click(sender As Object, e As EventArgs) Handles btnIniciarSesion.Click
+        SeleccionarCasoInicioSesion()
+    End Sub
+
+    Private Sub BarraTitulo_MouseDown(sender As Object, e As MouseEventArgs) Handles BarraTitulo.MouseDown
+        ReleaseCapture()
+        SendMessage(Me.Handle, &H112&, &HF012&, 0)
+    End Sub
+
+    Private Sub FormInicioSesion_MouseDown(sender As Object, e As MouseEventArgs) Handles MyBase.MouseDown
+        ReleaseCapture()
+        SendMessage(Me.Handle, &H112&, &HF012&, 0)
+    End Sub
+
+    Private Sub btnIniciarSesion_Paint(sender As Object, e As PaintEventArgs) Handles btnIniciarSesion.Paint
+        Dim botonPath As Drawing2D.GraphicsPath = New Drawing2D.GraphicsPath()
+        Dim rectangulo As Rectangle = btnIniciarSesion.ClientRectangle
+        rectangulo.Inflate(0, 30)
+        botonPath.AddEllipse(rectangulo)
+        btnIniciarSesion.Region = New Region(botonPath)
+    End Sub
+
+    Private Sub FormInicioSesion_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+    End Sub
+
+#End Region
+
+#Region "Procedimientos y Funciones Para el Form"
+    Public Sub SeleccionarCasoInicioSesion()
         Dim modeloUsuario As New ModeloUsuario
         Dim validarusario = modeloUsuario.ValidarUsario(txtUsuario.Text.Trim, txtPassword.Text.Trim)
+
         If validarusario = True Then
             If UsuarioActivo.CambiarPassword = True Then
                 UsuarioActivo.UsuarioEnSesion = txtUsuario.Text.Trim
@@ -59,30 +94,12 @@ Public Class FormInicioSesion
 
 
         Else
-                MsgBox("El Usuario Ingresado NO EXISTE. Veriquelo y Vuelva a Intentarlo", MsgBoxStyle.Critical, "Usuario Inexistente!")
+            MsgBox("El Usuario Ingresado NO EXISTE. Veriquelo y Vuelva a Intentarlo", MsgBoxStyle.Critical, "Usuario Inexistente!")
 
         End If
     End Sub
 
-    Private Sub BarraTitulo_MouseDown(sender As Object, e As MouseEventArgs) Handles BarraTitulo.MouseDown
-        ReleaseCapture()
-        SendMessage(Me.Handle, &H112&, &HF012&, 0)
-    End Sub
+#End Region
 
-    Private Sub FormInicioSesion_MouseDown(sender As Object, e As MouseEventArgs) Handles MyBase.MouseDown
-        ReleaseCapture()
-        SendMessage(Me.Handle, &H112&, &HF012&, 0)
-    End Sub
 
-    Private Sub btnIniciarSesion_Paint(sender As Object, e As PaintEventArgs) Handles btnIniciarSesion.Paint
-        Dim botonPath As Drawing2D.GraphicsPath = New Drawing2D.GraphicsPath()
-        Dim rectangulo As Rectangle = btnIniciarSesion.ClientRectangle
-        rectangulo.Inflate(0, 30)
-        botonPath.AddEllipse(rectangulo)
-        btnIniciarSesion.Region = New Region(botonPath)
-    End Sub
-
-    Private Sub FormInicioSesion_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
-    End Sub
 End Class

@@ -1,6 +1,7 @@
 ﻿Imports CapaComun
 Imports System.Runtime.InteropServices
 Imports System.Drawing.Drawing2D
+Imports CapaNegocio
 Public Class FormMenuProductos
 
 #Region "Personalizacion del FormProductos"
@@ -102,22 +103,53 @@ Public Class FormMenuProductos
     End Sub
 
 #End Region
+
+    Dim modeloProducto As New ModeloProducto
     Private Sub IconoHome_Click(sender As Object, e As EventArgs) Handles IconoHome.Click
         MostrarHome = True
         Me.Close()
     End Sub
 
     Private Sub FormMenuProductos_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
         RedondearBoton(btnAgregarProducto)
         RedondearBoton(btnActualizarProducto)
         RedondearBoton(btnEliminarProducto)
         RedondearBoton(btnActualizarListaPrecios)
         RedondearBoton(btnInventario)
+        Call MostrarInfo()
+        Call CargarProductos()
     End Sub
 
     Private Sub FormMenuProductos_Resize(sender As Object, e As EventArgs) Handles Me.Resize
         AjustarPaneles()
         AplicarBordesRedondeados()
         AjustarAnchoColumnas()
+    End Sub
+
+    Private Sub btnAgregarProducto_Click(sender As Object, e As EventArgs) Handles btnAgregarProducto.Click
+        Dim f As New FormAltaProducto
+        AddHandler FormAltaProducto.ProductoAgregado, AddressOf ActualizarGridProducto
+        f.ShowDialog()
+
+    End Sub
+
+    Public Sub MostrarInfo()
+        modeloProducto.InformacionMenuProductos()
+        lblTotalProductos.Text = Producto.CantidadProductos
+        lblProductosInactivos.Text = Producto.CantidaProductosInactivos
+        lblProductoMasVendido.Text = Producto.ProductoMasVendido
+    End Sub
+
+    Public Sub CargarProductos()
+        dgvListadoProductos.Columns(0).DataPropertyName = "IdProducto"
+        dgvListadoProductos.Columns(1).DataPropertyName = "Descripcion"
+        dgvListadoProductos.Columns(2).DataPropertyName = "PrecioCosto"
+        dgvListadoProductos.Columns(3).DataPropertyName = "PrecioVenta"
+        dgvListadoProductos.DataSource = modeloProducto.CargarListadoProductos
+    End Sub
+
+    Private Sub ActualizarGridProducto(sender As Object, e As EventArgs)
+        CargarProductos()
     End Sub
 End Class

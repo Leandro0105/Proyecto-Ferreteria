@@ -140,7 +140,7 @@ Public Class DAOUsuario
                 cmd.Parameters.AddWithValue("@Estado", "BLOQUEADO")
                 Try
                     cmd.ExecuteNonQuery()
-                    MsgBox("Ha realizado mas de 3 intentos!" + vbNewLine + "Su Usuario ha sido Bloqueado por cuestión de seguridad." + vbNewLine + "Comuniquese con el Administrador de Usuarios para Volver a Activar su Usuario", MsgBoxStyle.Critical, "Ha realizado mas de 3 intentos Fallidos!")
+                    MsgBox("Ha realizado 3 intentos!" + vbNewLine + "Su Usuario ha sido Bloqueado por cuestión de seguridad." + vbNewLine + "Comuniquese con el Administrador de Usuarios para Volver a Activar su Usuario", MsgBoxStyle.Critical, "Ha realizado 3 intentos Fallidos!")
                 Catch ex As Exception
                     MsgBox(ex.ToString)
                 End Try
@@ -234,6 +234,70 @@ Public Class DAOUsuario
             End Using
         End Using
 
+    End Sub
+
+    Public Function CargarListadoUsuarios() As DataTable
+        Dim dt As New DataTable
+        Dim consulta As String = "select apellidos, nombres from Usuarios order by idusuario desc"
+        Try
+            Using Conexion As SqlConnection = GetConnection()
+                Conexion.Open()
+                Using adaptador As New SqlDataAdapter(consulta, Conexion)
+                    adaptador.Fill(dt)
+                End Using
+
+            End Using
+
+        Catch ex As Exception
+            Throw New Exception("Error al obtener los Usuarios", ex)
+        End Try
+        Return dt
+    End Function
+
+    Public Sub ContarUsuarios()
+        Using ConexionSQLServer = GetConnection()
+            ConexionSQLServer.Open()
+            Using cmd, cmd1, cmd2 As New SqlCommand
+                cmd.Connection = ConexionSQLServer
+                cmd.CommandText = "Select count (*) from usuarios"
+                cmd.CommandType = CommandType.Text
+
+                cmd1.Connection = ConexionSQLServer
+                cmd1.CommandText = "Select count (*) from usuarios where estado=@estado"
+                cmd1.Parameters.AddWithValue("@estado", "BLOQUEADO")
+                cmd1.CommandType = CommandType.Text
+
+                cmd2.Connection = ConexionSQLServer
+                cmd2.CommandText = "Select count (*) from usuarios WHERE estado=@estado1"
+                cmd2.Parameters.AddWithValue("@estado1", "INACTIVO")
+                cmd2.CommandType = CommandType.Text
+
+                Dim dr, DR1, DR2 As SqlDataReader
+                dr = cmd.ExecuteReader
+                If dr.HasRows Then
+                    dr.Read()
+                    CantidadUsuarios = dr(0)
+                End If
+                dr.Close()
+                DR1 = cmd1.ExecuteReader
+                If DR1.HasRows Then
+                    DR1.Read()
+                    CantidadUsuariosBloqueados = DR1(0)
+                Else
+                    CantidadUsuariosBloqueados = 0
+                End If
+                DR1.Close()
+                DR2 = cmd2.ExecuteReader
+                If DR2.HasRows Then
+                    DR2.Read()
+                    CantidadUsuariosInactivos = DR2(0)
+                Else
+                    CantidadUsuariosInactivos = 0
+                End If
+                DR2.Close()
+
+            End Using
+        End Using
     End Sub
 
 End Class

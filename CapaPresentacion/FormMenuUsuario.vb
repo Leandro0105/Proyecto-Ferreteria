@@ -1,7 +1,10 @@
 ﻿Imports CapaComun
 Imports System.Runtime.InteropServices
 Imports System.Drawing.Drawing2D
+Imports CapaNegocio
 Public Class FormMenuUsuario
+
+    Dim modelousuario As New ModeloUsuario
 
 #Region "Personalizacion del FormUsuarios"
     <DllImport("Gdi32.dll", EntryPoint:="CreateRoundRectRgn")>
@@ -111,9 +114,22 @@ Public Class FormMenuUsuario
         RedondearBoton(btnAgregarUsuario)
         RedondearBoton(btnModificarUsuario)
         RedondearBoton(btnEliminarUsuario)
+        dgvListadoUsuarios.Columns(0).DataPropertyName = "Apellidos"
+        dgvListadoUsuarios.Columns(1).DataPropertyName = "Nombres"
+        dgvListadoUsuarios.DataSource = modelousuario.CargarDatosUsuarios
+        modelousuario.ContarUsuarios()
+        lblTotalUsuarios.Text = CantidadUsuarios
+        lblUsuariosBloqueados.Text = CantidadUsuariosBloqueados
+        lblUsuariosInactivos.Text = CantidadUsuariosInactivos
+
     End Sub
 
     Private Sub btnAgregarUsuario_Click(sender As Object, e As EventArgs) Handles btnAgregarUsuario.Click
-        FormAltaUsuarios.ShowDialog()
+        Dim f As New FormAltaUsuarios
+        If f.ShowDialog() = DialogResult.OK Then
+            dgvListadoUsuarios.Columns(0).DataPropertyName = "Apellidos"
+            dgvListadoUsuarios.Columns(1).DataPropertyName = "Nombres"
+            dgvListadoUsuarios.DataSource = modelousuario.CargarDatosUsuarios
+        End If
     End Sub
 End Class

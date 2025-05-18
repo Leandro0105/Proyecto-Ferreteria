@@ -64,6 +64,7 @@ Public Class FormAltaUsuarios
         End Try
     End Sub
     Private Sub btnCerrarr_Click(sender As Object, e As EventArgs) Handles btnCerrarr.Click
+        Me.DialogResult = DialogResult.OK
         Me.Close()
     End Sub
 

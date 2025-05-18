@@ -93,3 +93,4 @@ E:\Desktop\Proyecto-Ferreteria-2025\CapaPresentacion\obj\Debug\CapaPresentacion.
 E:\Desktop\Proyecto-Ferreteria-2025\CapaPresentacion\obj\Debug\CapaPresentacion.xml
 E:\Desktop\Proyecto-Ferreteria-2025\CapaPresentacion\obj\Debug\CapaPresentacion.pdb
 E:\Desktop\Proyecto-Ferreteria-2025\CapaPresentacion\obj\Debug\CapaPresentacion.FormCambiarPassword.resources
+E:\Desktop\Proyecto-Ferreteria-2025\CapaPresentacion\obj\Debug\CapaPresentacion.FormAltaProducto.resources

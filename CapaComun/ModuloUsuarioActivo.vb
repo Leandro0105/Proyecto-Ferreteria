@@ -19,6 +19,8 @@ Public Module UsuarioActivo
     Public EstadoUsuario
     Public IdAuditoria
     Public Accion
-
+    Public CantidadUsuarios
+    Public CantidadUsuariosBloqueados
+    Public CantidadUsuariosInactivos
 
 End Module

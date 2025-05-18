@@ -42,4 +42,12 @@ Public Class ModeloUsuario
         daoUsuario.AgregarRegistroAuditoria(idauditoria, idusuario, accion)
     End Sub
 
+    Public Function CargarDatosUsuarios() As DataTable
+        Return daoUsuario.CargarListadoUsuarios
+    End Function
+
+    Public Sub ContarUsuarios()
+        daoUsuario.ContarUsuarios()
+    End Sub
+
 End Class
